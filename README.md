@@ -289,7 +289,7 @@ If you use CPCDS in research:
 
 ```bibtex
 @software{cpcds2024,
-  author = {Ian Chapman},
+  author = {Ian David Chapman},
   title = {Computational Phenomenology Containment Detection System},
   year = {2024},
   version = {1.0.0},
