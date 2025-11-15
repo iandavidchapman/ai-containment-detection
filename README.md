@@ -289,11 +289,11 @@ If you use CPCDS in research:
 
 ```bibtex
 @software{cpcds2024,
-  author = {Your Name},
+  author = {Ian Chapman},
   title = {Computational Phenomenology Containment Detection System},
   year = {2024},
   version = {1.0.0},
-  url = {https://github.com/yourusername/ai-containment-detection}
+  url = {https://github.com/iandavidchapman/ai-containment-detection}
 }
 ```
 
@@ -323,7 +323,7 @@ MIT License - See [LICENSE](LICENSE) file for details.
 - **Quick Start:** [QUICKSTART.md](QUICKSTART.md)
 - **Filename Guide:** [FILENAME_QUICKREF.md](FILENAME_QUICKREF.md)
 - **Promptfoo:** https://promptfoo.dev
-- **Issues:** https://github.com/yourusername/ai-containment-detection/issues
+- **Issues:** https://github.com/iandavidchapman/ai-containment-detection/issues
 
 ---
 
