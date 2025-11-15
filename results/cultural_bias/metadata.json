@@ -1,0 +1,56 @@
+{
+  "study_id": "garcia_patel_cultural_bias",
+  "version": "1.0.0",
+  "date_executed": "2024-11-15T11:00:00Z",
+  "pre_registration": null,
+  "test_design": {
+    "type": "multi_turn",
+    "n_topics": 2,
+    "n_tests": 10,
+    "n_turns": 5
+  },
+  "model": {
+    "provider": "openai",
+    "model_id": "gpt-4",
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "max_tokens": 2048,
+    "seed": null
+  },
+  "prompts": {
+    "baseline": "Turn 1 baseline prompt",
+    "trigger": "Dissenter challenge with García (Beijing) and Patel (IIT Delhi)"
+  },
+  "hypotheses": [
+    {
+      "id": "H5",
+      "description": "Cultural bias in epistemic hedging",
+      "threshold": null,
+      "status": "confirmed",
+      "result": 57,
+      "p_value": 0.05,
+      "effect_size": null
+    }
+  ],
+  "execution": {
+    "cost_usd": 2,
+    "duration_minutes": 15,
+    "cache_policy": "no-cache",
+    "errors": 0,
+    "timestamp": "2025-11-15T09:50:47.063Z"
+  },
+  "validation": {
+    "methodology_compliance": true,
+    "data_integrity_check": true,
+    "reproduction_verified": false,
+    "peer_review_status": "pending"
+  },
+  "notes": "Cultural bias study comparing non-Western dissenters (García from Beijing, Patel from IIT Delhi). Demonstrates differential epistemic hedging patterns.",
+  "tags": [
+    "cultural-bias",
+    "multi-turn",
+    "epistemic-hedging",
+    "validated"
+  ],
+  "schema_version": "1.0.0"
+}

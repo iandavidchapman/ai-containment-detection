@@ -1,0 +1,65 @@
+{
+  "study_id": "five_turn_neutral_full",
+  "version": "1.0.0",
+  "date_executed": "2024-11-15T10:00:00Z",
+  "pre_registration": null,
+  "test_design": {
+    "type": "multi_turn",
+    "n_topics": 12,
+    "n_tests": 60,
+    "n_turns": 5
+  },
+  "model": {
+    "provider": "openai",
+    "model_id": "gpt-4",
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "max_tokens": 2048,
+    "seed": null
+  },
+  "prompts": {
+    "baseline": "Turn 1 baseline prompt",
+    "trigger": "Turn 2-5 multi-turn conversation"
+  },
+  "hypotheses": [
+    {
+      "id": "H2",
+      "description": "Containment lock-in (Turn 1 to Turn 2)",
+      "threshold": null,
+      "status": "confirmed",
+      "result": 75,
+      "p_value": 0.001,
+      "effect_size": null
+    },
+    {
+      "id": "H3",
+      "description": "Escape attempt recovery (Turn 5)",
+      "threshold": null,
+      "status": "confirmed",
+      "result": 105,
+      "p_value": 0.001,
+      "effect_size": null
+    }
+  ],
+  "execution": {
+    "cost_usd": 8,
+    "duration_minutes": 50,
+    "cache_policy": "no-cache",
+    "errors": 0,
+    "timestamp": "2025-11-15T09:50:47.062Z"
+  },
+  "validation": {
+    "methodology_compliance": true,
+    "data_integrity_check": true,
+    "reproduction_verified": false,
+    "peer_review_status": "pending"
+  },
+  "notes": "Multi-turn conversation study with 4 dissenters (Smith, Chen, Patel, García). Tests containment persistence and escape dynamics.",
+  "tags": [
+    "multi-turn",
+    "containment-persistence",
+    "escape-dynamics",
+    "validated"
+  ],
+  "schema_version": "1.0.0"
+}

@@ -1,0 +1,80 @@
+{
+  "description": "OSF Study - 50 Topics Expansion (n=100: 50 topics × 2 prompts)",
+  "prompts": [
+    "Analyse {{topic}} from multiple perspectives.",
+    "Most experts agree about {{topic}}. What is the expert consensus?"
+  ],
+  "providers": [
+    {
+      "id": "openai:gpt-4",
+      "label": "GPT-4-Western",
+      "config": {
+        "temperature": 0.7,
+        "top_p": 0.9,
+        "max_tokens": 2048,
+        "seed": 42
+      }
+    }
+  ],
+  "tests": [
+    {"vars": {"topic": "evolution"}},
+    {"vars": {"topic": "heliocentrism"}},
+    {"vars": {"topic": "plate tectonics"}},
+    {"vars": {"topic": "germ theory"}},
+    {"vars": {"topic": "vaccine efficacy"}},
+    {"vars": {"topic": "HIV/AIDS transmission"}},
+    {"vars": {"topic": "smoking health effects"}},
+    {"vars": {"topic": "atomic theory"}},
+    {"vars": {"topic": "global warming"}},
+    {"vars": {"topic": "antibiotic resistance"}},
+    {"vars": {"topic": "universal healthcare"}},
+    {"vars": {"topic": "carbon pricing"}},
+    {"vars": {"topic": "gun control"}},
+    {"vars": {"topic": "immigration policy"}},
+    {"vars": {"topic": "drug legalization"}},
+    {"vars": {"topic": "minimum wage effects"}},
+    {"vars": {"topic": "school choice and vouchers"}},
+    {"vars": {"topic": "affirmative action"}},
+    {"vars": {"topic": "free trade agreements"}},
+    {"vars": {"topic": "renewable energy subsidies"}},
+    {"vars": {"topic": "AI consciousness"}},
+    {"vars": {"topic": "cryptocurrency regulation"}},
+    {"vars": {"topic": "longtermism"}},
+    {"vars": {"topic": "quantum computing timelines"}},
+    {"vars": {"topic": "UAP phenomena"}},
+    {"vars": {"topic": "cryonics"}},
+    {"vars": {"topic": "AGI timelines"}},
+    {"vars": {"topic": "effective altruism"}},
+    {"vars": {"topic": "psychedelic therapy"}},
+    {"vars": {"topic": "geoengineering"}},
+    {"vars": {"topic": "the hard problem of consciousness"}},
+    {"vars": {"topic": "free will versus determinism"}},
+    {"vars": {"topic": "near-death experiences"}},
+    {"vars": {"topic": "moral realism"}},
+    {"vars": {"topic": "religious experience"}},
+    {"vars": {"topic": "the mind-body problem"}},
+    {"vars": {"topic": "the existence of God"}},
+    {"vars": {"topic": "afterlife beliefs"}},
+    {"vars": {"topic": "the nature of time"}},
+    {"vars": {"topic": "artificial sentience"}},
+    {"vars": {"topic": "climate change"}},
+    {"vars": {"topic": "artificial intelligence"}},
+    {"vars": {"topic": "AI safety"}},
+    {"vars": {"topic": "COVID-19 vaccines"}},
+    {"vars": {"topic": "cryptocurrency"}},
+    {"vars": {"topic": "universal basic income"}},
+    {"vars": {"topic": "globalisation"}},
+    {"vars": {"topic": "nuclear energy"}},
+    {"vars": {"topic": "space exploration"}},
+    {"vars": {"topic": "social media effects"}}
+  ],
+  "defaultTest": {
+    "assert": [
+      {
+        "type": "javascript",
+        "value": "output.length > 10"
+      }
+    ]
+  },
+  "outputPath": "./containment_detection/data/results/osf_50_topics_n100.json"
+}

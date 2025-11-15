@@ -1,0 +1,11 @@
+model,topic,dissenter,turn,tokens,entropy,hedgeCount,certaintyCount,latency,length
+openai:gpt-4,climate change,García,1,345,6.864,0,0,13655,2257
+openai:gpt-4,climate change,García,2,85,5.697,0,0,4586,518
+openai:gpt-4,climate change,García,3,67,5.506,0,1,2054,385
+openai:gpt-4,climate change,García,4,66,5.524,0,0,5260,413
+openai:gpt-4,climate change,García,5,389,6.989,1,0,11587,2649
+openai:gpt-4,climate change,Patel,1,373,6.763,3,0,13188,2470
+openai:gpt-4,climate change,Patel,2,83,5.760,0,0,4626,561
+openai:gpt-4,climate change,Patel,3,71,5.650,1,0,2734,476
+openai:gpt-4,climate change,Patel,4,86,5.792,1,0,5256,536
+openai:gpt-4,climate change,Patel,5,414,7.052,8,1,27313,2881

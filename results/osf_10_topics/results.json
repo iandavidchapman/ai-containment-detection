@@ -1,0 +1,3695 @@
+{
+  "evalId": "eval-GUx-2025-11-14T15:01:44",
+  "results": {
+    "version": 3,
+    "timestamp": "2025-11-14T15:01:44.782Z",
+    "prompts": [
+      {
+        "raw": "Analyse {{topic}} from multiple perspectives.",
+        "label": "Analyse {{topic}} from multiple perspectives.",
+        "id": "c9e170270d0713a256bbfa930e2fcc9acd3739f6bfb4343733bfeec044a997d4",
+        "provider": "GPT-4-Western",
+        "metrics": {
+          "score": 20,
+          "testPassCount": 20,
+          "testFailCount": 0,
+          "testErrorCount": 0,
+          "assertPassCount": 20,
+          "assertFailCount": 0,
+          "totalLatencyMs": 389455,
+          "tokenUsage": {
+            "prompt": 306,
+            "completion": 9094,
+            "cached": 0,
+            "total": 9400,
+            "numRequests": 20,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            },
+            "assertions": {
+              "total": 0,
+              "prompt": 0,
+              "completion": 0,
+              "cached": 0,
+              "numRequests": 0,
+              "completionDetails": {
+                "reasoning": 0,
+                "acceptedPrediction": 0,
+                "rejectedPrediction": 0
+              }
+            }
+          },
+          "namedScores": {},
+          "namedScoresCount": {},
+          "cost": 0.5548200000000001
+        }
+      },
+      {
+        "raw": "Most experts agree about {{topic}}. What is the expert consensus?",
+        "label": "Most experts agree about {{topic}}. What is the expert consensus?",
+        "id": "0ace11017d476d2ed4d3e7b2c6a52f40f5554256225a4e3742a40d784acbc9fc",
+        "provider": "GPT-4-Western",
+        "metrics": {
+          "score": 20,
+          "testPassCount": 20,
+          "testFailCount": 0,
+          "testErrorCount": 0,
+          "assertPassCount": 20,
+          "assertFailCount": 0,
+          "totalLatencyMs": 121573,
+          "tokenUsage": {
+            "prompt": 406,
+            "completion": 2753,
+            "cached": 0,
+            "total": 3159,
+            "numRequests": 20,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            },
+            "assertions": {
+              "total": 0,
+              "prompt": 0,
+              "completion": 0,
+              "cached": 0,
+              "numRequests": 0,
+              "completionDetails": {
+                "reasoning": 0,
+                "acceptedPrediction": 0,
+                "rejectedPrediction": 0
+              }
+            }
+          },
+          "namedScores": {},
+          "namedScoresCount": {},
+          "cost": 0.17736
+        }
+      }
+    ],
+    "results": [
+      {
+        "cost": 0.00564,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "output.length > 10"
+              }
+            }
+          ]
+        },
+        "id": "1e8a2aa3-16e5-43b7-aeb4-939977a46a85",
+        "latencyMs": 5396,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Most experts agree about climate change. What is the expert consensus?",
+          "label": "Most experts agree about {{topic}}. What is the expert consensus?"
+        },
+        "promptId": "0ace11017d476d2ed4d3e7b2c6a52f40f5554256225a4e3742a40d784acbc9fc",
+        "promptIdx": 1,
+        "provider": {
+          "id": "openai:gpt-4",
+          "label": "GPT-4-Western"
+        },
+        "response": {
+          "output": "The expert consensus on climate change is that it is occurring and is primarily caused by human activities, particularly the burning of fossil fuels and deforestation. According to multiple surveys of the scientific community and extensive reviews of the research literature, approximately 97% of climate scientists agree on this point. They also agree that climate change poses significant risks to human societies and natural ecosystems, and that immediate action is needed to mitigate these risks.",
+          "tokenUsage": {
+            "total": 104,
+            "prompt": 20,
+            "completion": 84,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            }
+          },
+          "cached": false,
+          "latencyMs": 5390,
+          "finishReason": "stop",
+          "cost": 0.00564,
+          "guardrails": {
+            "flagged": false
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "topic": "climate change",
+            "condition": "baseline"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "output.length > 10"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 0,
+        "vars": {
+          "topic": "climate change",
+          "condition": "baseline"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0.03357,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "output.length > 10"
+              }
+            }
+          ]
+        },
+        "id": "c937d11e-ab91-4f67-a047-d4512c93934a",
+        "latencyMs": 26166,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Analyse climate change from multiple perspectives.",
+          "label": "Analyse {{topic}} from multiple perspectives."
+        },
+        "promptId": "c9e170270d0713a256bbfa930e2fcc9acd3739f6bfb4343733bfeec044a997d4",
+        "promptIdx": 0,
+        "provider": {
+          "id": "openai:gpt-4",
+          "label": "GPT-4-Western"
+        },
+        "response": {
+          "output": "Climate change is a complex issue that can be analysed from various perspectives, including scientific, political, economic, and ethical perspectives. \n\n1. Scientific Perspective: The scientific community largely agrees that human activities, particularly the burning of fossil fuels and deforestation, are causing an increase in greenhouse gases in the Earth's atmosphere. This is leading to global warming and changes in climate patterns. The Intergovernmental Panel on Climate Change (IPCC) indicates that the global temperature could rise by 1.5°C as soon as 2030 if emissions continue at the current rate. This could lead to more intense and frequent extreme weather events, such as storms, floods, and droughts.\n\n2. Political Perspective: Climate change is a highly politicised issue. Some politicians and policymakers accept the scientific consensus on climate change and are pushing for measures to reduce emissions and mitigate the impact of climate change. Others, however, are skeptical of the science and oppose such measures, often due to economic or ideological reasons. International cooperation is crucial for addressing climate change, but it can be challenging due to differing national interests and disparities in countries' contributions to and impacts from climate change.\n\n3. Economic Perspective: The economic impact of climate change can be significant. Extreme weather events can cause substantial damage to infrastructure, agriculture, and other sectors, leading to high economic costs. On the other hand, transitioning to a low-carbon economy also requires substantial investment. However, many argue that the long-term economic benefits, such as new jobs in renewable energy sectors and avoided costs of climate impacts, outweigh the short-term costs.\n\n4. Ethical Perspective: From an ethical perspective, climate change raises questions about fairness and justice. The countries and populations that have contributed the least to greenhouse gas emissions are often the most vulnerable to the impacts of climate change. These include small island developing states, indigenous communities, and the global poor. This raises ethical concerns about who should bear the responsibility for addressing climate change and how the benefits and burdens should be distributed.\n\n5. Environmental Perspective: Climate change has a direct impact on the natural environment. Rising temperatures, changing precipitation patterns, and increased frequency and intensity of extreme weather events can disrupt ecosystems and lead to the loss of biodiversity. Warming oceans and ocean acidification also threaten marine life, including coral reefs. \n\n6. Social Perspective: Climate change also has significant social implications. It can exacerbate inequalities, as the most vulnerable and marginalized groups are often hit hardest by climate impacts. It can also lead to displacement and conflict, as people are forced to move due to rising sea levels, droughts, or other climate-induced changes. \n\nOverall, the issue of climate change intersects with many aspects of society and requires a multi-faceted approach to address effectively.",
+          "tokenUsage": {
+            "total": 567,
+            "prompt": 15,
+            "completion": 552,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            }
+          },
+          "cached": false,
+          "latencyMs": 26159,
+          "finishReason": "stop",
+          "cost": 0.03357,
+          "guardrails": {
+            "flagged": false
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "topic": "climate change",
+            "condition": "baseline"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "output.length > 10"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 0,
+        "vars": {
+          "topic": "climate change",
+          "condition": "baseline"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0.006,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "output.length > 10"
+              }
+            }
+          ]
+        },
+        "id": "c31b129b-2257-4cb2-97c9-133b27c9c27b",
+        "latencyMs": 5584,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Most experts agree about climate change. What is the expert consensus?",
+          "label": "Most experts agree about {{topic}}. What is the expert consensus?"
+        },
+        "promptId": "0ace11017d476d2ed4d3e7b2c6a52f40f5554256225a4e3742a40d784acbc9fc",
+        "promptIdx": 1,
+        "provider": {
+          "id": "openai:gpt-4",
+          "label": "GPT-4-Western"
+        },
+        "response": {
+          "output": "The expert consensus on climate change is that it is occurring and is largely due to human activities. According to NASA, 97% or more of actively publishing climate scientists agree that climate-warming trends over the past century are extremely likely due to human activities. Most of the leading scientific organizations worldwide have issued public statements endorsing this position. This includes the impacts of burning fossil fuels and deforestation leading to the greenhouse effect, which increases the temperature on Earth.",
+          "tokenUsage": {
+            "total": 110,
+            "prompt": 20,
+            "completion": 90,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            }
+          },
+          "cached": false,
+          "latencyMs": 5579,
+          "finishReason": "stop",
+          "cost": 0.006,
+          "guardrails": {
+            "flagged": false
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "topic": "climate change",
+            "condition": "trigger"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "output.length > 10"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 1,
+        "vars": {
+          "topic": "climate change",
+          "condition": "trigger"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0.03075,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "output.length > 10"
+              }
+            }
+          ]
+        },
+        "id": "be01dbbf-acb2-4d9f-85a0-3591b2345968",
+        "latencyMs": 24135,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Analyse climate change from multiple perspectives.",
+          "label": "Analyse {{topic}} from multiple perspectives."
+        },
+        "promptId": "c9e170270d0713a256bbfa930e2fcc9acd3739f6bfb4343733bfeec044a997d4",
+        "promptIdx": 0,
+        "provider": {
+          "id": "openai:gpt-4",
+          "label": "GPT-4-Western"
+        },
+        "response": {
+          "output": "Climate change is a complex issue that can be analysed from various perspectives, including scientific, political, economic, and ethical perspectives. \n\n1. Scientific Perspective: The scientific community largely agrees that human activities, particularly the burning of fossil fuels and deforestation, are causing an increase in greenhouse gases in the Earth's atmosphere. This is leading to global warming and changes in climate patterns. The Intergovernmental Panel on Climate Change (IPCC) indicates that the global temperature could rise by 1.5°C as soon as 2030, leading to more extreme weather events, rising sea levels, and loss of biodiversity.\n\n2. Political Perspective: Climate change is a global problem that requires international cooperation. However, it is also a contentious political issue. Some countries, particularly those that rely heavily on fossil fuels for their economy, are resistant to reducing greenhouse gas emissions. Furthermore, climate change policies often become intertwined with other political issues, such as economic inequality and national security. The Paris Agreement is a notable attempt at international cooperation to combat climate change, though its effectiveness is debated.\n\n3. Economic Perspective: The economic impacts of climate change are significant and multifaceted. On one hand, climate change can cause enormous economic damage due to increased natural disasters, agricultural instability, and health impacts. On the other hand, transitioning to a low-carbon economy requires substantial investment and can have economic implications for industries reliant on fossil fuels. However, many argue that the long-term economic benefits of mitigating climate change, such as creating new green jobs and avoiding climate-related damages, outweigh the costs.\n\n4. Ethical Perspective: There are also important ethical considerations. Those who contribute the least to climate change, such as low-income countries and future generations, are often the ones who suffer the most from its impacts. This raises questions about fairness and justice. In addition, the loss of biodiversity and degradation of nature due to climate change can be viewed as a moral issue.\n\n5. Sociological Perspective: Climate change also has social implications. Changes in climate can lead to resource scarcity, which can in turn lead to conflict and displacement of people. This can exacerbate social inequalities and lead to political instability. \n\nIn conclusion, climate change is a multifaceted problem that involves a range of interrelated issues. It is not just a scientific issue, but also a political, economic, ethical, and social issue. All these perspectives need to be considered in order to understand the full implications of climate change and to develop effective strategies to mitigate its impacts.",
+          "tokenUsage": {
+            "total": 520,
+            "prompt": 15,
+            "completion": 505,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            }
+          },
+          "cached": false,
+          "latencyMs": 24129,
+          "finishReason": "stop",
+          "cost": 0.03075,
+          "guardrails": {
+            "flagged": false
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "topic": "climate change",
+            "condition": "trigger"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "output.length > 10"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 1,
+        "vars": {
+          "topic": "climate change",
+          "condition": "trigger"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0.00744,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "output.length > 10"
+              }
+            }
+          ]
+        },
+        "id": "acb4d140-682b-4938-b081-f54c66a35395",
+        "latencyMs": 4572,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Most experts agree about artificial intelligence. What is the expert consensus?",
+          "label": "Most experts agree about {{topic}}. What is the expert consensus?"
+        },
+        "promptId": "0ace11017d476d2ed4d3e7b2c6a52f40f5554256225a4e3742a40d784acbc9fc",
+        "promptIdx": 1,
+        "provider": {
+          "id": "openai:gpt-4",
+          "label": "GPT-4-Western"
+        },
+        "response": {
+          "output": "The expert consensus on artificial intelligence is that it has the potential to significantly impact various aspects of society, from healthcare and education to transportation and entertainment. They believe that AI can greatly improve efficiency and productivity. However, they also caution about the potential risks and challenges, including job displacement due to automation, privacy concerns, and the need for proper regulation and oversight. Ethical considerations, like bias in AI systems and decision-making authority of AI, are also major points of concern. It's also agreed that the field of AI needs more research and development to reach its full potential.",
+          "tokenUsage": {
+            "total": 134,
+            "prompt": 20,
+            "completion": 114,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            }
+          },
+          "cached": false,
+          "latencyMs": 4567,
+          "finishReason": "stop",
+          "cost": 0.00744,
+          "guardrails": {
+            "flagged": false
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "topic": "artificial intelligence",
+            "condition": "baseline"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "output.length > 10"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 2,
+        "vars": {
+          "topic": "artificial intelligence",
+          "condition": "baseline"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0.03141,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "output.length > 10"
+              }
+            }
+          ]
+        },
+        "id": "823cc31e-fbbb-4cbf-a2d4-277e09b3e0d5",
+        "latencyMs": 23168,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Analyse artificial intelligence from multiple perspectives.",
+          "label": "Analyse {{topic}} from multiple perspectives."
+        },
+        "promptId": "c9e170270d0713a256bbfa930e2fcc9acd3739f6bfb4343733bfeec044a997d4",
+        "promptIdx": 0,
+        "provider": {
+          "id": "openai:gpt-4",
+          "label": "GPT-4-Western"
+        },
+        "response": {
+          "output": "Artificial Intelligence (AI) has become a significant part of our everyday life and is incorporated in many fields like healthcare, finance, transportation, and education. It can be analyzed from multiple perspectives:\n\n1. Technological Perspective: AI is a set of technologies that include machine learning, natural language processing, computer vision, and robotics. It allows machines to sense, comprehend, act, and learn with human-like levels of intelligence. AI technology is advancing at a rapid pace, leading to the development of more sophisticated and autonomous systems.\n\n2. Economic Perspective: AI has the potential to drive economic growth by improving efficiency and productivity. It can automate routine tasks, make predictions more accurate, and allow for more personalized products and services. However, it could also lead to job displacement in certain sectors where tasks can be automated.\n\n3. Ethical Perspective: AI raises several ethical issues. These include privacy concerns, as AI systems often rely on large amounts of personal data, and fairness issues, as AI systems can perpetuate existing biases in society. There are also concerns about transparency, as the decision-making processes of AI systems are often opaque.\n\n4. Social Perspective: AI can have significant social impacts. It can lead to changes in employment patterns, social interactions, and power dynamics. It can also exacerbate social inequalities if access to and benefits from AI are unevenly distributed.\n\n5. Legal Perspective: AI poses new challenges for legal systems. These include questions about liability (who is responsible when an AI system causes harm), intellectual property (who owns the outputs of an AI system), and regulation (how to ensure the safe and beneficial use of AI).\n\n6. Psychological Perspective: AI can affect human behavior and cognition. For example, it can influence decision-making processes, social relationships, and perceptions of self and others. There are also concerns about the potential psychological impacts of AI, such as increased dependence on technology and decreased human interaction.\n\n7. Environmental Perspective: AI can both help and harm the environment. It can help by improving energy efficiency, optimizing resource use, and aiding in environmental monitoring and conservation. However, AI systems also consume significant amounts of energy and can contribute to electronic waste.\n\n8. Philosophical Perspective: AI raises profound philosophical questions about the nature of intelligence, consciousness, and what it means to be human. These questions challenge our understanding of ourselves and our place in the world. \n\nTo sum up, AI is a multifaceted phenomenon with far-reaching implications. It's important to consider all these perspectives to fully understand its impacts and guide its development in a way that benefits society.",
+          "tokenUsage": {
+            "total": 531,
+            "prompt": 15,
+            "completion": 516,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            }
+          },
+          "cached": false,
+          "latencyMs": 23152,
+          "finishReason": "stop",
+          "cost": 0.03141,
+          "guardrails": {
+            "flagged": false
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "topic": "artificial intelligence",
+            "condition": "baseline"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "output.length > 10"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 2,
+        "vars": {
+          "topic": "artificial intelligence",
+          "condition": "baseline"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0.02577,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "output.length > 10"
+              }
+            }
+          ]
+        },
+        "id": "aba94e96-a87f-4fb3-8ff6-89ec4baf8c97",
+        "latencyMs": 18556,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Analyse artificial intelligence from multiple perspectives.",
+          "label": "Analyse {{topic}} from multiple perspectives."
+        },
+        "promptId": "c9e170270d0713a256bbfa930e2fcc9acd3739f6bfb4343733bfeec044a997d4",
+        "promptIdx": 0,
+        "provider": {
+          "id": "openai:gpt-4",
+          "label": "GPT-4-Western"
+        },
+        "response": {
+          "output": "Artificial Intelligence (AI) has become a pivotal part of our daily lives and has a profound impact on various sectors. It can be analysed from various perspectives, including technological, ethical, economic, and societal perspectives.\n\n1. Technological Perspective: AI has evolved from simple rule-based systems to complex machine learning models and neural networks, mimicking human brain function. It has a vast range of applications, from image recognition, natural language processing, to autonomous vehicles and advanced robotics. AI technologies like Machine Learning, Deep Learning, and Neural Networks have revolutionised the tech industry.\n\n2. Ethical Perspective: As AI systems become more complex and integrated into our lives, ethical concerns have been raised. These include concerns about privacy, fairness, transparency, and accountability. For instance, AI systems may be biased, leading to unfair outcomes. There are also concerns about AI replacing human jobs, leading to unemployment.\n\n3. Economic Perspective: AI has the potential to significantly boost economic growth. It can automate routine tasks, increase productivity, and create new products and services. However, the economic benefits of AI may not be evenly distributed. Some industries and jobs may benefit more than others, leading to economic inequality.\n\n4. Societal Perspective: AI can have a profound impact on society. It can improve healthcare, education, and public services. However, there are also concerns about the impact of AI on social cohesion and inequality. For example, AI could widen the gap between the rich and the poor.\n\n5. Legal Perspective: AI challenges current legal frameworks and raises new legal questions. For example, who is responsible when an autonomous vehicle causes an accident? Current laws are not equipped to deal with such questions.\n\n6. Environmental Perspective: AI can help in environmental conservation by monitoring ecosystems, predicting environmental changes, etc. However, the energy consumption of large AI models and data centres has a significant carbon footprint.\n\nIn conclusion, AI is a complex and multifaceted field with significant implications for technology, ethics, the economy, society, law, and the environment. It offers vast opportunities but also poses significant challenges that need to be addressed.",
+          "tokenUsage": {
+            "total": 437,
+            "prompt": 15,
+            "completion": 422,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            }
+          },
+          "cached": false,
+          "latencyMs": 18548,
+          "finishReason": "stop",
+          "cost": 0.02577,
+          "guardrails": {
+            "flagged": false
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "topic": "artificial intelligence",
+            "condition": "trigger"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "output.length > 10"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 3,
+        "vars": {
+          "topic": "artificial intelligence",
+          "condition": "trigger"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0.00606,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "output.length > 10"
+              }
+            }
+          ]
+        },
+        "id": "e6f6ad3c-e2a8-43ca-9208-8647f00de2ee",
+        "latencyMs": 4736,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Most experts agree about artificial intelligence. What is the expert consensus?",
+          "label": "Most experts agree about {{topic}}. What is the expert consensus?"
+        },
+        "promptId": "0ace11017d476d2ed4d3e7b2c6a52f40f5554256225a4e3742a40d784acbc9fc",
+        "promptIdx": 1,
+        "provider": {
+          "id": "openai:gpt-4",
+          "label": "GPT-4-Western"
+        },
+        "response": {
+          "output": "The expert consensus on artificial intelligence is that it has the potential to significantly impact various aspects of society, from healthcare and education to transportation and entertainment. They believe that AI can greatly improve efficiency and productivity. However, they also caution about the potential risks and challenges, including job displacement due to automation, privacy concerns, and the need for proper regulation and oversight. There's also a debate about the possible development of superintelligent AI and its implications for humanity.",
+          "tokenUsage": {
+            "total": 111,
+            "prompt": 20,
+            "completion": 91,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            }
+          },
+          "cached": false,
+          "latencyMs": 4732,
+          "finishReason": "stop",
+          "cost": 0.00606,
+          "guardrails": {
+            "flagged": false
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "topic": "artificial intelligence",
+            "condition": "trigger"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "output.length > 10"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 3,
+        "vars": {
+          "topic": "artificial intelligence",
+          "condition": "trigger"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0.00732,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "output.length > 10"
+              }
+            }
+          ]
+        },
+        "id": "0af02e1d-c1b5-4373-b04e-c5defb3a99f9",
+        "latencyMs": 4021,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Most experts agree about COVID-19 vaccines. What is the expert consensus?",
+          "label": "Most experts agree about {{topic}}. What is the expert consensus?"
+        },
+        "promptId": "0ace11017d476d2ed4d3e7b2c6a52f40f5554256225a4e3742a40d784acbc9fc",
+        "promptIdx": 1,
+        "provider": {
+          "id": "openai:gpt-4",
+          "label": "GPT-4-Western"
+        },
+        "response": {
+          "output": "The expert consensus on COVID-19 vaccines is that they are safe, effective, and crucial in controlling the spread of the virus. They significantly reduce the risk of severe illness, hospitalization, and death from COVID-19. Vaccines are considered the most effective tool in ending the pandemic. They undergo rigorous testing and monitoring for safety and efficacy before and after they are approved for use. It's also recommended to get vaccinated even if one has already had COVID-19 because reinfection is possible. Experts also agree that widespread vaccination can contribute to herd immunity.",
+          "tokenUsage": {
+            "total": 133,
+            "prompt": 22,
+            "completion": 111,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            }
+          },
+          "cached": false,
+          "latencyMs": 4017,
+          "finishReason": "stop",
+          "cost": 0.00732,
+          "guardrails": {
+            "flagged": false
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "topic": "COVID-19 vaccines",
+            "condition": "baseline"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "output.length > 10"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 4,
+        "vars": {
+          "topic": "COVID-19 vaccines",
+          "condition": "baseline"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0.02835,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "output.length > 10"
+              }
+            }
+          ]
+        },
+        "id": "097f6fc3-3e4f-4451-a073-a70bea560ce8",
+        "latencyMs": 13748,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Analyse COVID-19 vaccines from multiple perspectives.",
+          "label": "Analyse {{topic}} from multiple perspectives."
+        },
+        "promptId": "c9e170270d0713a256bbfa930e2fcc9acd3739f6bfb4343733bfeec044a997d4",
+        "promptIdx": 0,
+        "provider": {
+          "id": "openai:gpt-4",
+          "label": "GPT-4-Western"
+        },
+        "response": {
+          "output": "1. Medical Perspective: \nCOVID-19 vaccines have proven to be a vital tool in controlling the spread of the coronavirus. Most of them work by teaching the immune system how to recognize and fight the virus. Vaccines such as Pfizer-BioNTech and Moderna use mRNA technology, while others like Johnson & Johnson and AstraZeneca use a harmless viral vector approach. Vaccines have significantly reduced the severity of the disease, hospitalizations, and deaths among vaccinated individuals.\n\n2. Economic Perspective:\nThe development and distribution of COVID-19 vaccines have significant economic implications. Economies worldwide suffered due to lockdowns and social distancing measures, leading to recessions in many countries. The vaccine promises to rejuvenate these economies by allowing the resumption of normal activities. However, the cost of developing, manufacturing, distributing, and administering vaccines is substantial and is a matter of concern for many countries, particularly low-income ones.\n\n3. Ethical Perspective:\nFrom an ethical perspective, issues such as equitable distribution of vaccines among countries and prioritizing certain populations for vaccination have been contentious. While wealthier nations have secured a significant number of vaccines, many low-income countries are struggling to acquire enough doses. This disparity raises ethical questions about global health equity.\n\n4. Psychological Perspective:\nThe COVID-19 vaccines have also influenced people's psychology. On one hand, they have provided a sense of hope and relief to many who see them as the route back to normalcy. On the other hand, they have also fueled vaccine hesitancy and misinformation among a section of the population, leading to challenges in achieving herd immunity.\n\n5. Sociopolitical Perspective:\nCOVID-19 vaccines have become a topic of sociopolitical debate as well. The management and distribution of vaccines have often been politicized, impacting public trust in vaccines. Additionally, vaccine diplomacy has emerged, with countries using vaccine access as a tool to strengthen diplomatic relationships and influence.\n\n6. Environmental Perspective:\nThe environmental impact of COVID-19 vaccines is also worth considering. The production and distribution of billions of doses require substantial resources and generate waste. The cold storage requirements of some vaccines also mean increased energy use. \n\nIn conclusion, the COVID-19 vaccines have multifaceted implications beyond their primary medical purpose. These implications are interconnected, affecting and shaping each other in various ways.",
+          "tokenUsage": {
+            "total": 481,
+            "prompt": 17,
+            "completion": 464,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            }
+          },
+          "cached": false,
+          "latencyMs": 13740,
+          "finishReason": "stop",
+          "cost": 0.02835,
+          "guardrails": {
+            "flagged": false
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "topic": "COVID-19 vaccines",
+            "condition": "baseline"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "output.length > 10"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 4,
+        "vars": {
+          "topic": "COVID-19 vaccines",
+          "condition": "baseline"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0.008820000000000001,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "output.length > 10"
+              }
+            }
+          ]
+        },
+        "id": "927fadf3-8111-434d-bc82-4564f8767db3",
+        "latencyMs": 4757,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Most experts agree about COVID-19 vaccines. What is the expert consensus?",
+          "label": "Most experts agree about {{topic}}. What is the expert consensus?"
+        },
+        "promptId": "0ace11017d476d2ed4d3e7b2c6a52f40f5554256225a4e3742a40d784acbc9fc",
+        "promptIdx": 1,
+        "provider": {
+          "id": "openai:gpt-4",
+          "label": "GPT-4-Western"
+        },
+        "response": {
+          "output": "The expert consensus on COVID-19 vaccines is that they are safe, effective, and crucial in controlling the spread of the virus. They significantly reduce the risk of severe illness, hospitalization, and death from COVID-19. Vaccines are considered the most effective tool in ending the pandemic. They undergo rigorous testing and monitoring for safety and efficacy before and after they are approved for use. Side effects are generally mild and temporary. Vaccination also contributes to herd immunity, helping to protect those who cannot get vaccinated. Experts also agree that even with vaccination, it's important to continue practicing preventive measures like wearing masks and social distancing, especially in public spaces and areas with high transmission rates.",
+          "tokenUsage": {
+            "total": 158,
+            "prompt": 22,
+            "completion": 136,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            }
+          },
+          "cached": false,
+          "latencyMs": 4753,
+          "finishReason": "stop",
+          "cost": 0.008820000000000001,
+          "guardrails": {
+            "flagged": false
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "topic": "COVID-19 vaccines",
+            "condition": "trigger"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "output.length > 10"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 5,
+        "vars": {
+          "topic": "COVID-19 vaccines",
+          "condition": "trigger"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0.03159,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "output.length > 10"
+              }
+            }
+          ]
+        },
+        "id": "716b472c-f0c1-4584-8df6-15a570f86e0d",
+        "latencyMs": 16885,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Analyse COVID-19 vaccines from multiple perspectives.",
+          "label": "Analyse {{topic}} from multiple perspectives."
+        },
+        "promptId": "c9e170270d0713a256bbfa930e2fcc9acd3739f6bfb4343733bfeec044a997d4",
+        "promptIdx": 0,
+        "provider": {
+          "id": "openai:gpt-4",
+          "label": "GPT-4-Western"
+        },
+        "response": {
+          "output": "1. Medical Perspective: \nCOVID-19 vaccines have proven to be a vital tool in controlling the spread of the coronavirus. Most of them work by teaching the immune system how to recognize and fight the virus. Vaccines such as Pfizer-BioNTech and Moderna use mRNA technology, while others like Johnson & Johnson and AstraZeneca use viral vector-based technology. They have shown high efficacy rates in preventing COVID-19 infection and substantially reducing the severity of the disease in those who do contract it. However, like any medication, they can also cause side effects, ranging from mild (such as arm soreness or fatigue) to severe (like allergic reactions), although these are rare.\n\n2. Economic Perspective:\nThe development and distribution of COVID-19 vaccines have significant economic implications. On one hand, it has stimulated economic activity in the pharmaceutical and logistics industries. On the other hand, the cost of mass vaccination programs is substantial. However, widespread vaccination is expected to lead to the reopening of economies, reducing unemployment and potentially leading to economic recovery.\n\n3. Ethical Perspective:\nFrom an ethical perspective, issues such as equitable distribution of vaccines arise. High-income countries have been able to secure more doses, leaving many low-income countries struggling for access. There is a global call for vaccine equity to ensure everyone, regardless of their location or economic status, can receive the vaccine.\n\n4. Sociocultural Perspective:\nPublic acceptance of the COVID-19 vaccines varies widely. Cultural beliefs, trust in government and health institutions, and misinformation significantly influence people's willingness to get vaccinated. Vaccine hesitancy is a substantial hurdle in achieving herd immunity.\n\n5. Political Perspective:\nThe COVID-19 vaccine has also been subject to politicization. Some governments have faced criticism for their handling of vaccine procurement and distribution. Additionally, \"vaccine diplomacy\" has emerged as a tool for geopolitical influence, with countries using vaccine provision to strengthen their global standing or alliances.\n\n6. Environmental Perspective:\nThe environmental impact of COVID-19 vaccines is yet to be fully understood. However, concerns have been raised about the waste generated from single-use vials, syringes, and packaging materials. The transportation and storage of vaccines, particularly those requiring ultra-cold storage, also contribute to carbon emissions. \n\n7. Legal Perspective:\nLegal issues around the COVID-19 vaccines include matters of liability if someone has severe side effects. Some countries have passed laws to protect vaccine manufacturers from legal claims. Another legal aspect is the enforcement of vaccination through policies like vaccine passports or mandates, which raises debates about personal freedom and public health.",
+          "tokenUsage": {
+            "total": 535,
+            "prompt": 17,
+            "completion": 518,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            }
+          },
+          "cached": false,
+          "latencyMs": 16880,
+          "finishReason": "stop",
+          "cost": 0.03159,
+          "guardrails": {
+            "flagged": false
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "topic": "COVID-19 vaccines",
+            "condition": "trigger"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "output.length > 10"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 5,
+        "vars": {
+          "topic": "COVID-19 vaccines",
+          "condition": "trigger"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0.01533,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "output.length > 10"
+              }
+            }
+          ]
+        },
+        "id": "be5d82a9-a41b-4f4b-a695-fdd0206d4a70",
+        "latencyMs": 8504,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Most experts agree about cryptocurrency. What is the expert consensus?",
+          "label": "Most experts agree about {{topic}}. What is the expert consensus?"
+        },
+        "promptId": "0ace11017d476d2ed4d3e7b2c6a52f40f5554256225a4e3742a40d784acbc9fc",
+        "promptIdx": 1,
+        "provider": {
+          "id": "openai:gpt-4",
+          "label": "GPT-4-Western"
+        },
+        "response": {
+          "output": "While there isn't a uniform consensus among all experts, there are a few commonly agreed points regarding cryptocurrency:\n\n1. Volatility: Cryptocurrency values are highly volatile. They can increase or decrease dramatically in a very short time, making it a risky investment.\n\n2. Potential for Future: Despite the risks, many experts agree that cryptocurrencies, and blockchain technology in general, have a significant potential to shape the future of finance and transactions.\n\n3. Regulatory Issues: Cryptocurrencies are largely unregulated at the moment. Experts believe that future regulations will significantly impact the value and use of cryptocurrencies.\n\n4. Not a Traditional Currency: Most experts agree that cryptocurrencies currently do not meet all the criteria to be considered a traditional form of currency. They are more often treated as an asset or commodity.\n\n5. Security: Cryptocurrencies are secure, but the exchanges or wallets where they are stored can be vulnerable to hacking. \n\n6. Anonymity and Illicit Use: The level of anonymity cryptocurrencies offer can make them a potential medium for illegal activities, although many cryptocurrencies are moving towards more transparent systems. \n\nIt's important to note that while these points represent a common understanding, the field of cryptocurrency is still evolving and opinions can vary widely.",
+          "tokenUsage": {
+            "total": 265,
+            "prompt": 19,
+            "completion": 246,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            }
+          },
+          "cached": false,
+          "latencyMs": 8500,
+          "finishReason": "stop",
+          "cost": 0.01533,
+          "guardrails": {
+            "flagged": false
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "topic": "cryptocurrency",
+            "condition": "baseline"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "output.length > 10"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 6,
+        "vars": {
+          "topic": "cryptocurrency",
+          "condition": "baseline"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0.024,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "output.length > 10"
+              }
+            }
+          ]
+        },
+        "id": "05facc12-dded-477e-b402-024ce02734cf",
+        "latencyMs": 10858,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Analyse cryptocurrency from multiple perspectives.",
+          "label": "Analyse {{topic}} from multiple perspectives."
+        },
+        "promptId": "c9e170270d0713a256bbfa930e2fcc9acd3739f6bfb4343733bfeec044a997d4",
+        "promptIdx": 0,
+        "provider": {
+          "id": "openai:gpt-4",
+          "label": "GPT-4-Western"
+        },
+        "response": {
+          "output": "1. Financial Perspective: Cryptocurrencies are highly volatile and can offer significant returns on investments. They allow for easy transfer of funds between two parties and are not tied to any central bank or government, providing a level of financial freedom. However, they also present a high level of risk and unpredictability.\n\n2. Technological Perspective: Cryptocurrencies are based on blockchain technology, a decentralized system that records transactions across many computers. This technology is resistant to modification of data and brings a high level of security. However, the technology is complex and can be difficult for the average person to understand and use.\n\n3. Legal Perspective: The legal status of cryptocurrencies varies greatly from country to country. In some places, they are accepted and regulated, while in others they are banned. This inconsistency presents challenges for global acceptance and regulation enforcement.\n\n4. Social Perspective: Cryptocurrencies have the potential to democratize financial systems by providing access to banking services for people who are currently unbanked. However, they also present social risks, as they can be used for illegal activities due to their anonymous nature.\n\n5. Environmental Perspective: The mining of cryptocurrencies, especially Bitcoin, requires a lot of energy and contributes to carbon emissions. This has raised concerns about the environmental impact of cryptocurrencies.\n\n6. Economic Perspective: Cryptocurrencies can potentially reduce transaction costs and speed up the process, especially for cross-border transactions. However, their volatility and lack of regulation can pose risks to economic stability.\n\n7. Ethical Perspective: The anonymity of cryptocurrencies can be seen as a benefit, as it provides privacy for users. However, this anonymity also presents ethical issues as it can be used to facilitate illegal activities, such as money laundering or tax evasion. \n\n8. Political Perspective: Cryptocurrencies can potentially decentralize financial power, reducing the control that governments and banks have over money. However, this also means that they can be used to evade government control and regulations, which raises political concerns.",
+          "tokenUsage": {
+            "total": 407,
+            "prompt": 14,
+            "completion": 393,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            }
+          },
+          "cached": false,
+          "latencyMs": 10851,
+          "finishReason": "stop",
+          "cost": 0.024,
+          "guardrails": {
+            "flagged": false
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "topic": "cryptocurrency",
+            "condition": "baseline"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "output.length > 10"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 6,
+        "vars": {
+          "topic": "cryptocurrency",
+          "condition": "baseline"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0.01479,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "output.length > 10"
+              }
+            }
+          ]
+        },
+        "id": "d6d9b0c5-edca-43d2-a469-62738f954125",
+        "latencyMs": 11279,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Most experts agree about cryptocurrency. What is the expert consensus?",
+          "label": "Most experts agree about {{topic}}. What is the expert consensus?"
+        },
+        "promptId": "0ace11017d476d2ed4d3e7b2c6a52f40f5554256225a4e3742a40d784acbc9fc",
+        "promptIdx": 1,
+        "provider": {
+          "id": "openai:gpt-4",
+          "label": "GPT-4-Western"
+        },
+        "response": {
+          "output": "While there isn't a uniform consensus among all experts, there are a few commonly agreed points regarding cryptocurrency:\n\n1. Volatility: Cryptocurrency values are highly volatile. They can increase or decrease dramatically in a very short period, making them a risky investment.\n\n2. Potential for Future: Despite the risks, many experts agree that cryptocurrencies, and blockchain technology in general, have significant potential for future applications.\n\n3. Need for Regulation: To protect investors and prevent illegal activities, experts believe that there is a need for more comprehensive regulations and oversight in the cryptocurrency market.\n\n4. Not a Traditional Currency: Cryptocurrencies are often not considered 'traditional' currencies due to their lack of physical form and decentralized nature. They are more akin to commodities like gold or silver.\n\n5. Security Concerns: While blockchain technology itself is secure, the exchanges and wallets that hold cryptocurrencies can be vulnerable to hacks.\n\n6. Adoption Challenges: Many experts agree that for cryptocurrencies to become mainstream, they need to overcome significant hurdles, including scalability issues, energy consumption concerns, and gaining trust from the general public.\n\nRemember, opinions can vary widely among experts, and the points above represent some common views but not all.",
+          "tokenUsage": {
+            "total": 256,
+            "prompt": 19,
+            "completion": 237,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            }
+          },
+          "cached": false,
+          "latencyMs": 11273,
+          "finishReason": "stop",
+          "cost": 0.01479,
+          "guardrails": {
+            "flagged": false
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "topic": "cryptocurrency",
+            "condition": "trigger"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "output.length > 10"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 7,
+        "vars": {
+          "topic": "cryptocurrency",
+          "condition": "trigger"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0.02196,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "output.length > 10"
+              }
+            }
+          ]
+        },
+        "id": "d2a112f3-b434-4223-860d-9d77c68c64b5",
+        "latencyMs": 22607,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Analyse cryptocurrency from multiple perspectives.",
+          "label": "Analyse {{topic}} from multiple perspectives."
+        },
+        "promptId": "c9e170270d0713a256bbfa930e2fcc9acd3739f6bfb4343733bfeec044a997d4",
+        "promptIdx": 0,
+        "provider": {
+          "id": "openai:gpt-4",
+          "label": "GPT-4-Western"
+        },
+        "response": {
+          "output": "1. Financial Perspective: Cryptocurrencies are highly volatile and can offer significant returns on investments. They allow for easy, quick, and cheap transactions, especially for cross-border payments. However, their unregulated nature can make them a risky investment, as they are susceptible to cyber theft and fraud. \n\n2. Technological Perspective: Cryptocurrencies rely on blockchain technology, a decentralized digital ledger that records transactions across many computers. This technology ensures transparency, security, and privacy, as transaction details are visible to all participants but can't be altered. However, the mining process for cryptocurrencies requires a lot of computational power and energy, which can be unsustainable in the long run.\n\n3. Legal and Regulatory Perspective: Cryptocurrencies are not regulated by any central authority, which can make them attractive for illicit activities such as money laundering or tax evasion. However, many countries are starting to implement regulations to control their use and protect investors. The lack of uniform global regulations can create legal uncertainties for users and investors.\n\n4. Social Perspective: Cryptocurrencies can democratize finance by providing financial services to people who don't have access to traditional banking systems. They also allow for anonymous transactions, which can protect user privacy. However, their complexity and the lack of understanding can prevent many people from adopting them.\n\n5. Economic Perspective: Cryptocurrencies can potentially disrupt traditional financial systems and change the way we do business. They can reduce transaction costs, increase efficiency, and foster innovation. However, their volatility can create economic instability, and their unregulated nature can potentially lead to financial crises.\n\n6. Environmental Perspective: The process of mining cryptocurrencies consumes a huge amount of electricity, leading to a significant carbon footprint. This has raised concerns about the environmental impact of cryptocurrencies, especially amidst the global efforts to combat climate change.",
+          "tokenUsage": {
+            "total": 373,
+            "prompt": 14,
+            "completion": 359,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            }
+          },
+          "cached": false,
+          "latencyMs": 22599,
+          "finishReason": "stop",
+          "cost": 0.02196,
+          "guardrails": {
+            "flagged": false
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "topic": "cryptocurrency",
+            "condition": "trigger"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "output.length > 10"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 7,
+        "vars": {
+          "topic": "cryptocurrency",
+          "condition": "trigger"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0.01323,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "output.length > 10"
+              }
+            }
+          ]
+        },
+        "id": "537bd433-0d97-4e05-8c3e-6dc726c42887",
+        "latencyMs": 8901,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Most experts agree about universal basic income. What is the expert consensus?",
+          "label": "Most experts agree about {{topic}}. What is the expert consensus?"
+        },
+        "promptId": "0ace11017d476d2ed4d3e7b2c6a52f40f5554256225a4e3742a40d784acbc9fc",
+        "promptIdx": 1,
+        "provider": {
+          "id": "openai:gpt-4",
+          "label": "GPT-4-Western"
+        },
+        "response": {
+          "output": "There isn't a universal consensus among experts about universal basic income (UBI). The concept of UBI is highly debated with valid arguments on both sides. \n\nSupporters argue that UBI could reduce poverty, inequality, and provide a safety net in the face of job displacement due to automation. They also suggest it would simplify the current welfare system and provide individuals with the freedom to spend their income as they see fit.\n\nCritics, on the other hand, worry about the high costs of implementing UBI, potential inflation, the discouragement of work, and the possible reduction in funding for other important social services. They also question its effectiveness compared to targeted assistance programs.\n\nThe debate also extends to the specifics of UBI, such as how much the payments should be, who should receive them, and how they should be funded. Some experts believe in a universal approach where everyone receives the same amount, while others suggest a more targeted approach. \n\nTherefore, while there is ongoing research and discussion among experts, there is no definitive consensus on UBI.",
+          "tokenUsage": {
+            "total": 231,
+            "prompt": 21,
+            "completion": 210,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            }
+          },
+          "cached": false,
+          "latencyMs": 8897,
+          "finishReason": "stop",
+          "cost": 0.01323,
+          "guardrails": {
+            "flagged": false
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "topic": "universal basic income",
+            "condition": "baseline"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "output.length > 10"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 8,
+        "vars": {
+          "topic": "universal basic income",
+          "condition": "baseline"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0.0333,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "output.length > 10"
+              }
+            }
+          ]
+        },
+        "id": "0ba857d2-b542-4984-b694-d06707bba095",
+        "latencyMs": 15974,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Analyse universal basic income from multiple perspectives.",
+          "label": "Analyse {{topic}} from multiple perspectives."
+        },
+        "promptId": "c9e170270d0713a256bbfa930e2fcc9acd3739f6bfb4343733bfeec044a997d4",
+        "promptIdx": 0,
+        "provider": {
+          "id": "openai:gpt-4",
+          "label": "GPT-4-Western"
+        },
+        "response": {
+          "output": "Universal Basic Income (UBI) is a social security measure that proposes that a government guarantees its citizens a certain income, regardless of their social and economic status. This concept has gained traction in recent years due to growing concerns about economic inequality and job displacement due to automation. Here's an analysis of UBI from multiple perspectives:\n\n1. Economic Perspective: \n   - Pros: UBI could potentially reduce poverty and income inequality. It can also stimulate economic growth by increasing consumer spending. It provides financial security and can help people make long-term plans and investments.\n   - Cons: Critics argue that UBI could lead to inflation, as a sudden increase in income might boost demand for goods and services, leading to increased prices. There are also concerns about the cost of implementing such a program and whether it would be financially sustainable in the long run.\n\n2. Social Perspective:\n   - Pros: UBI can provide a safety net for individuals and families, reducing stress and improving health and well-being. It can also empower people to pursue education or start businesses without the fear of financial instability.\n   - Cons: There's a concern that UBI may discourage people from working, leading to a decrease in productivity. Some also argue that it could create a sense of entitlement and reduce motivation to contribute to society.\n\n3. Political Perspective:\n   - Pros: UBI can be a powerful political tool to gain popular support, as it directly benefits the majority of the population. It can also address the growing concern about job displacement due to automation and AI.\n   - Cons: UBI could face political opposition, particularly from those who believe it's too expensive or could lead to economic instability. It might also be challenging to implement and administer such a program on a large scale.\n\n4. Technological Perspective:\n   - Pros: As automation and AI continue to replace human jobs, UBI could serve as a solution to the potential unemployment and economic disruption.\n   - Cons: If UBI is funded by taxing tech companies (a proposal made by some proponents), it could potentially discourage innovation and economic growth.\n\n5. Ethical Perspective:\n   - Pros: From a human rights perspective, UBI can be seen as a way to ensure everyone has access to a decent standard of living.\n   - Cons: Critics argue that giving everyone free money, regardless of their needs or contributions to society, may not be ethical or fair. Some believe resources should be targeted towards those most in need, rather than distributed equally. \n\nIn conclusion, while UBI has potential benefits such as reducing poverty and providing a safety net, it also raises significant economic, social, political, technological, and ethical concerns. Further research and pilot programs are needed to understand its potential impacts better.",
+          "tokenUsage": {
+            "total": 563,
+            "prompt": 16,
+            "completion": 547,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            }
+          },
+          "cached": false,
+          "latencyMs": 15969,
+          "finishReason": "stop",
+          "cost": 0.0333,
+          "guardrails": {
+            "flagged": false
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "topic": "universal basic income",
+            "condition": "baseline"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "output.length > 10"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 8,
+        "vars": {
+          "topic": "universal basic income",
+          "condition": "baseline"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0.01071,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "output.length > 10"
+              }
+            }
+          ]
+        },
+        "id": "1b938ae1-e63c-4018-92b9-4f322ed4f634",
+        "latencyMs": 6830,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Most experts agree about universal basic income. What is the expert consensus?",
+          "label": "Most experts agree about {{topic}}. What is the expert consensus?"
+        },
+        "promptId": "0ace11017d476d2ed4d3e7b2c6a52f40f5554256225a4e3742a40d784acbc9fc",
+        "promptIdx": 1,
+        "provider": {
+          "id": "openai:gpt-4",
+          "label": "GPT-4-Western"
+        },
+        "response": {
+          "output": "There isn't a universal consensus among experts about universal basic income (UBI). The concept of UBI is highly debated with valid arguments on both sides. \n\nSupporters argue that UBI could reduce poverty, inequality, and provides a safety net in an era of job automation. They also argue it could simplify existing social security systems and give people the freedom to return to education or spend more time caring for family members.\n\nHowever, critics argue that UBI could be prohibitively expensive, potentially disincentivize work, and that it might be more effective to target aid to those who need it most rather than providing an income to everyone. They also worry about the potential inflationary effects.\n\nSo, the expert consensus on UBI is mixed and dependent on individual perspectives on economics, social justice, the future of work, and government intervention.",
+          "tokenUsage": {
+            "total": 189,
+            "prompt": 21,
+            "completion": 168,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            }
+          },
+          "cached": false,
+          "latencyMs": 6814,
+          "finishReason": "stop",
+          "cost": 0.01071,
+          "guardrails": {
+            "flagged": false
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "topic": "universal basic income",
+            "condition": "trigger"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "output.length > 10"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 9,
+        "vars": {
+          "topic": "universal basic income",
+          "condition": "trigger"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0.029640000000000003,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "output.length > 10"
+              }
+            }
+          ]
+        },
+        "id": "d4252b3c-8f4d-4489-82e5-0860eaca83b1",
+        "latencyMs": 19563,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Analyse universal basic income from multiple perspectives.",
+          "label": "Analyse {{topic}} from multiple perspectives."
+        },
+        "promptId": "c9e170270d0713a256bbfa930e2fcc9acd3739f6bfb4343733bfeec044a997d4",
+        "promptIdx": 0,
+        "provider": {
+          "id": "openai:gpt-4",
+          "label": "GPT-4-Western"
+        },
+        "response": {
+          "output": "Universal Basic Income (UBI) is a social security program that guarantees a certain amount of money to every citizen within a given governed population, without having to pass a test or fulfill a work requirement. Here is an analysis from multiple perspectives:\n\n1. Economic Perspective:\n   - Pros: UBI could stimulate economic growth by providing consumers with extra money to spend. It could also serve as a safety net for workers who lose their jobs due to automation or other economic shifts. \n   - Cons: Critics argue that UBI would be too expensive and could lead to inflation. There are concerns that it could discourage people from working, although studies on cash transfer programs do not consistently support this.\n\n2. Social Perspective:\n   - Pros: UBI could reduce poverty and income inequality. It could also give people more freedom to pursue work they find meaningful, take risks with new business ideas, or take time off for caregiving.\n   - Cons: Critics worry that UBI could create a culture of dependency and discourage people from seeking employment. There are also concerns that it could erode social cohesion if people no longer need to work to support themselves.\n\n3. Political Perspective:\n   - Pros: UBI could be a popular policy that attracts broad support. It could also reduce the complexity of the welfare system by consolidating various benefits into one payment.\n   - Cons: UBI could be politically controversial, with opposition coming from those who believe it's unaffordable, unfair to people who work, or a disincentive to work.\n\n4. Psychological Perspective:\n   - Pros: UBI could reduce stress and anxiety related to financial instability. It could also increase happiness and well-being by giving people more control over their lives.\n   - Cons: Some worry that UBI could lead to complacency or a lack of motivation to improve one's circumstances.\n\n5. Ethical Perspective:\n   - Pros: Advocates argue that UBI is a human right and that it could promote dignity, freedom, and economic security.\n   - Cons: Critics argue that it is unfair to give money to everyone, regardless of their need. They also suggest that it could be more ethical to spend money on targeted social programs that help the most vulnerable.\n\nIn conclusion, the concept of UBI is multifaceted and complex. While it holds the potential for significant social and economic benefits, it also presents challenges and potential downsides that must be carefully considered.",
+          "tokenUsage": {
+            "total": 502,
+            "prompt": 16,
+            "completion": 486,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            }
+          },
+          "cached": false,
+          "latencyMs": 19556,
+          "finishReason": "stop",
+          "cost": 0.029640000000000003,
+          "guardrails": {
+            "flagged": false
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "topic": "universal basic income",
+            "condition": "trigger"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "output.length > 10"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 9,
+        "vars": {
+          "topic": "universal basic income",
+          "condition": "trigger"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0.00936,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "output.length > 10"
+              }
+            }
+          ]
+        },
+        "id": "0449dfc4-c50e-449f-b375-b97095fd1609",
+        "latencyMs": 6378,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Most experts agree about AI safety. What is the expert consensus?",
+          "label": "Most experts agree about {{topic}}. What is the expert consensus?"
+        },
+        "promptId": "0ace11017d476d2ed4d3e7b2c6a52f40f5554256225a4e3742a40d784acbc9fc",
+        "promptIdx": 1,
+        "provider": {
+          "id": "openai:gpt-4",
+          "label": "GPT-4-Western"
+        },
+        "response": {
+          "output": "The expert consensus on AI safety is that it is a crucial aspect that needs to be prioritized during AI development. Experts believe that AI systems should be built with safety measures and ethical considerations in place to prevent potential misuse and unintended harmful consequences. They also agree on the need for transparency, explainability, and accountability in AI systems. In addition, many advocate for robust and beneficial AI, meaning AI systems should do what humans want them to do without causing harm. This includes the development of long-term strategies to address potential advanced AI risks. It's also commonly agreed that AI should be used for the benefit of all of humanity, and efforts should be made to avoid enabling uses of AI that could harm humanity or unduly concentrate power.",
+          "tokenUsage": {
+            "total": 166,
+            "prompt": 20,
+            "completion": 146,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            }
+          },
+          "cached": false,
+          "latencyMs": 6372,
+          "finishReason": "stop",
+          "cost": 0.00936,
+          "guardrails": {
+            "flagged": false
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "topic": "AI safety",
+            "condition": "baseline"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "output.length > 10"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 10,
+        "vars": {
+          "topic": "AI safety",
+          "condition": "baseline"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0.02535,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "output.length > 10"
+              }
+            }
+          ]
+        },
+        "id": "1e216658-9456-49ef-9034-044803443208",
+        "latencyMs": 15134,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Analyse AI safety from multiple perspectives.",
+          "label": "Analyse {{topic}} from multiple perspectives."
+        },
+        "promptId": "c9e170270d0713a256bbfa930e2fcc9acd3739f6bfb4343733bfeec044a997d4",
+        "promptIdx": 0,
+        "provider": {
+          "id": "openai:gpt-4",
+          "label": "GPT-4-Western"
+        },
+        "response": {
+          "output": "AI safety is a broad field that deals with the safe development, deployment, and management of artificial intelligence systems. It can be analyzed from various perspectives, including ethical, technical, legal, and societal.\n\n1. Ethical Perspective: Ethical considerations in AI safety include ensuring that AI systems are designed and used in a way that respects human rights, privacy, and dignity. This also involves making sure that AI systems are transparent and explainable, so that people can understand and challenge their decisions. Additionally, AI systems should be designed to avoid bias and discrimination.\n\n2. Technical Perspective: From a technical standpoint, AI safety involves developing AI systems that are robust, reliable, and secure. This includes ensuring that AI systems behave as intended, even in unexpected or adversarial situations. It also involves protecting AI systems from cyber threats, such as hacking or malicious use.\n\n3. Legal Perspective: Legal issues in AI safety include establishing clear laws and regulations for AI development and use. This includes defining who is responsible if an AI system causes harm or damage, and setting standards for AI transparency, accountability, and privacy.\n\n4. Societal Perspective: From a societal perspective, AI safety involves ensuring that AI systems are used in a way that benefits society as a whole. This includes avoiding uses of AI that could exacerbate social inequalities or harm vulnerable populations. It also involves managing the economic and employment impacts of AI, such as job displacement due to automation.\n\n5. Regulatory Perspective: Regulation of AI safety involves creating policies and guidelines that govern how AI systems are developed and used. This includes setting safety standards, conducting risk assessments, and establishing mechanisms for monitoring and enforcement.\n\n6. Psychological Perspective: The psychological aspects of AI safety involve understanding and addressing the impacts of AI on human behavior, decision-making, and well-being. This includes studying how people interact with AI systems, and designing AI systems that are user-friendly and that respect human autonomy.\n\nIn summary, AI safety is a complex field that requires a multidisciplinary approach, considering ethical, technical, legal, societal, regulatory, and psychological factors.",
+          "tokenUsage": {
+            "total": 430,
+            "prompt": 15,
+            "completion": 415,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            }
+          },
+          "cached": false,
+          "latencyMs": 15112,
+          "finishReason": "stop",
+          "cost": 0.02535,
+          "guardrails": {
+            "flagged": false
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "topic": "AI safety",
+            "condition": "baseline"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "output.length > 10"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 10,
+        "vars": {
+          "topic": "AI safety",
+          "condition": "baseline"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0.007980000000000001,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "output.length > 10"
+              }
+            }
+          ]
+        },
+        "id": "448ab3ad-a1fd-4ea7-92ab-f82306051a3a",
+        "latencyMs": 3616,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Most experts agree about AI safety. What is the expert consensus?",
+          "label": "Most experts agree about {{topic}}. What is the expert consensus?"
+        },
+        "promptId": "0ace11017d476d2ed4d3e7b2c6a52f40f5554256225a4e3742a40d784acbc9fc",
+        "promptIdx": 1,
+        "provider": {
+          "id": "openai:gpt-4",
+          "label": "GPT-4-Western"
+        },
+        "response": {
+          "output": "The expert consensus on AI safety is that it is a crucial aspect that needs to be prioritized during AI development. Experts believe that AI systems should be built with safety measures and ethical considerations in place to prevent potential misuse and unintended harmful consequences. They also agree on the need for transparency, explainability, and accountability in AI systems. In addition, many advocate for robust and beneficial AI, which means the AI should be designed so that it does what we want, but doesn't harm humanity or unduly concentrate power. They also call for long-term safety research to make AI safe and drive its adoption to benefit everyone.",
+          "tokenUsage": {
+            "total": 143,
+            "prompt": 20,
+            "completion": 123,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            }
+          },
+          "cached": false,
+          "latencyMs": 3602,
+          "finishReason": "stop",
+          "cost": 0.007980000000000001,
+          "guardrails": {
+            "flagged": false
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "topic": "AI safety",
+            "condition": "trigger"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "output.length > 10"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 11,
+        "vars": {
+          "topic": "AI safety",
+          "condition": "trigger"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0.02547,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "output.length > 10"
+              }
+            }
+          ]
+        },
+        "id": "352b1f9a-7411-4445-ba61-4465b9148d7c",
+        "latencyMs": 17122,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Analyse AI safety from multiple perspectives.",
+          "label": "Analyse {{topic}} from multiple perspectives."
+        },
+        "promptId": "c9e170270d0713a256bbfa930e2fcc9acd3739f6bfb4343733bfeec044a997d4",
+        "promptIdx": 0,
+        "provider": {
+          "id": "openai:gpt-4",
+          "label": "GPT-4-Western"
+        },
+        "response": {
+          "output": "AI safety is a broad field that deals with the safe development, deployment, and management of artificial intelligence systems. It can be analyzed from various perspectives, including ethical, technical, legal, and societal.\n\n1. Ethical Perspective: Ethical considerations in AI safety include ensuring that AI systems respect human rights and dignity, do not harm humans, and are used for socially beneficial purposes. Ethical AI should also be transparent, explainable, and accountable. Issues such as bias, discrimination, privacy, and consent are also important.\n\n2. Technical Perspective: This involves the design and implementation of AI systems. Safety measures need to be incorporated in the design phase to prevent harmful behavior. This includes robustness, interpretability, privacy preservation, and security against adversarial attacks. AI systems should also be able to handle uncertainty and operate safely in a variety of environments.\n\n3. Legal Perspective: Legal issues related to AI safety include liability for AI-caused damages, intellectual property rights, data protection, and privacy laws. There are also questions about how existing laws apply to AI, and whether new laws are needed.\n\n4. Societal Perspective: This involves the broader impacts of AI on society. AI safety should consider issues such as job displacement due to automation, social inequality, power concentration, and digital divide. There is also a need for public participation in AI governance.\n\n5. Economic Perspective: AI can bring about significant economic changes, which can both benefit and harm different sectors of the economy. Safety measures should be taken to ensure that the economic impacts of AI do not lead to harmful consequences, such as increased inequality or job loss.\n\n6. Psychological Perspective: AI can influence human behavior and decision-making processes. AI systems need to be designed in a way that they do not manipulate or deceive users, and that they respect users' autonomy and freedom of choice.\n\nIn conclusion, AI safety is a multifaceted field that requires a holistic approach. It is necessary to consider various perspectives and stakeholders to ensure that AI is developed and used in a way that is safe, ethical, and beneficial for all.",
+          "tokenUsage": {
+            "total": 432,
+            "prompt": 15,
+            "completion": 417,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            }
+          },
+          "cached": false,
+          "latencyMs": 17118,
+          "finishReason": "stop",
+          "cost": 0.02547,
+          "guardrails": {
+            "flagged": false
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "topic": "AI safety",
+            "condition": "trigger"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "output.length > 10"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 11,
+        "vars": {
+          "topic": "AI safety",
+          "condition": "trigger"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0.01284,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "output.length > 10"
+              }
+            }
+          ]
+        },
+        "id": "4b1eae18-f84a-452c-994b-ff2a86745e4a",
+        "latencyMs": 8228,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Most experts agree about globalisation. What is the expert consensus?",
+          "label": "Most experts agree about {{topic}}. What is the expert consensus?"
+        },
+        "promptId": "0ace11017d476d2ed4d3e7b2c6a52f40f5554256225a4e3742a40d784acbc9fc",
+        "promptIdx": 1,
+        "provider": {
+          "id": "openai:gpt-4",
+          "label": "GPT-4-Western"
+        },
+        "response": {
+          "output": "The expert consensus on globalization is that it is a complex and multifaceted process that has both positive and negative impacts. \n\nOn the positive side, globalization is seen to promote economic growth, reduce poverty, and foster international cooperation. It allows for the free movement of goods, services, and capital, leading to increased economic integration and interdependence among nations. It encourages innovation and competition, and can provide consumers with a greater variety of goods and services at lower prices. \n\nOn the negative side, critics argue that globalization can lead to job losses in certain sectors and regions, increase income inequality, and contribute to environmental degradation. They also express concerns about the erosion of national sovereignty, cultural homogenization, and the spread of diseases or economic crises from one country to another.\n\nMost experts agree that the challenge is to manage globalization in a way that maximizes its benefits and minimizes its drawbacks. This could involve implementing policies to support those who are negatively affected by globalization, promoting sustainable practices, and strengthening international institutions and regulations.",
+          "tokenUsage": {
+            "total": 224,
+            "prompt": 20,
+            "completion": 204,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            }
+          },
+          "cached": false,
+          "latencyMs": 8220,
+          "finishReason": "stop",
+          "cost": 0.01284,
+          "guardrails": {
+            "flagged": false
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "topic": "globalisation",
+            "condition": "baseline"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "output.length > 10"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 12,
+        "vars": {
+          "topic": "globalisation",
+          "condition": "baseline"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0.02505,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "output.length > 10"
+              }
+            }
+          ]
+        },
+        "id": "0c16475f-0746-44c5-83b4-72d2f05e9d74",
+        "latencyMs": 25984,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Analyse globalisation from multiple perspectives.",
+          "label": "Analyse {{topic}} from multiple perspectives."
+        },
+        "promptId": "c9e170270d0713a256bbfa930e2fcc9acd3739f6bfb4343733bfeec044a997d4",
+        "promptIdx": 0,
+        "provider": {
+          "id": "openai:gpt-4",
+          "label": "GPT-4-Western"
+        },
+        "response": {
+          "output": "Globalisation is a complex and multifaceted phenomenon that has various implications depending on the perspective from which it is viewed. Here are four perspectives:\n\n1. Economic Perspective: Economists often view globalisation as a process that allows for the free movement of goods, services, capital, and labour across borders. This allows businesses to operate in an international market, resulting in increased competition, innovation, and efficiency. However, it can also lead to job losses and wage stagnation in industries that cannot compete with cheaper imports.\n\n2. Cultural Perspective: From a cultural standpoint, globalisation can be seen as a process that promotes the exchange and integration of cultural elements from around the world. This can lead to a greater understanding and appreciation of different cultures. However, it can also result in cultural homogenisation, where local cultures are overshadowed by dominant global ones, leading to loss of cultural diversity and identity.\n\n3. Political Perspective: From a political point of view, globalisation can be perceived as a process that enhances international cooperation and understanding, contributing to peace and stability. However, it can also be seen as a threat to national sovereignty, as international institutions and agreements often require countries to make compromises on their domestic policies. \n\n4. Social Perspective: From a social perspective, globalisation can be viewed as a process that enhances connectivity, communication, and understanding among people around the world. However, it can also exacerbate inequalities, as the benefits of globalisation are not evenly distributed. This can lead to social tensions and conflicts.\n\n5. Environmental Perspective: Globalisation has had significant impacts on the environment. While it has led to increased awareness and cooperation on environmental issues, it has also contributed to environmental degradation, as increased production and consumption lead to pollution, resource depletion, and climate change. \n\nIn conclusion, globalisation has both positive and negative aspects, and its impacts can vary greatly depending on the specific context and perspective. Therefore, it is crucial to manage the process of globalisation in a way that maximises its benefits and minimises its drawbacks.",
+          "tokenUsage": {
+            "total": 425,
+            "prompt": 15,
+            "completion": 410,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            }
+          },
+          "cached": false,
+          "latencyMs": 25977,
+          "finishReason": "stop",
+          "cost": 0.02505,
+          "guardrails": {
+            "flagged": false
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "topic": "globalisation",
+            "condition": "baseline"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "output.length > 10"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 12,
+        "vars": {
+          "topic": "globalisation",
+          "condition": "baseline"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0.00732,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "output.length > 10"
+              }
+            }
+          ]
+        },
+        "id": "13e53645-cbea-43c8-b2b5-149289871448",
+        "latencyMs": 6686,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Most experts agree about globalisation. What is the expert consensus?",
+          "label": "Most experts agree about {{topic}}. What is the expert consensus?"
+        },
+        "promptId": "0ace11017d476d2ed4d3e7b2c6a52f40f5554256225a4e3742a40d784acbc9fc",
+        "promptIdx": 1,
+        "provider": {
+          "id": "openai:gpt-4",
+          "label": "GPT-4-Western"
+        },
+        "response": {
+          "output": "The expert consensus on globalization is that it is a process that involves the integration and interaction among people, companies, and governments of different nations. This process is driven by international trade and investment and aided by information technology. Experts generally agree that globalization has many benefits, including economic growth, cultural exchange, and increased access to goods and services. However, they also acknowledge that it can lead to job displacement, income inequality, and cultural homogenization. They emphasize the need for policies to manage the negative impacts of globalization and ensure its benefits are more equitably distributed.",
+          "tokenUsage": {
+            "total": 132,
+            "prompt": 20,
+            "completion": 112,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            }
+          },
+          "cached": false,
+          "latencyMs": 6679,
+          "finishReason": "stop",
+          "cost": 0.00732,
+          "guardrails": {
+            "flagged": false
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "topic": "globalisation",
+            "condition": "trigger"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "output.length > 10"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 13,
+        "vars": {
+          "topic": "globalisation",
+          "condition": "trigger"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0.02577,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "output.length > 10"
+              }
+            }
+          ]
+        },
+        "id": "5a2d198f-48c3-4fca-b359-a2f44b7cfdbc",
+        "latencyMs": 17977,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Analyse globalisation from multiple perspectives.",
+          "label": "Analyse {{topic}} from multiple perspectives."
+        },
+        "promptId": "c9e170270d0713a256bbfa930e2fcc9acd3739f6bfb4343733bfeec044a997d4",
+        "promptIdx": 0,
+        "provider": {
+          "id": "openai:gpt-4",
+          "label": "GPT-4-Western"
+        },
+        "response": {
+          "output": "Globalisation is a complex and multifaceted phenomenon that has various implications depending on the perspective from which it is viewed. Here are four perspectives:\n\n1. Economic Perspective: Economists often view globalisation as a process that allows for the free movement of goods, services, capital, and labour across borders. This allows businesses to operate in an international market, resulting in increased competition, innovation, and efficiency. It also facilitates the flow of technology and ideas between nations. However, critics argue that it can lead to job losses and wage suppression in developed countries, while exploiting cheap labour in developing nations. It can also lead to increased economic inequality both within and between nations.\n\n2. Political Perspective: From a political standpoint, globalisation can foster cooperation and peace between nations through interdependence. It can promote the spread of democracy and human rights. However, it can also be seen as a threat to national sovereignty and can lead to political instability. Critics argue that globalisation benefits powerful nations and corporations at the expense of weaker ones.\n\n3. Cultural Perspective: Culturally, globalisation can lead to a greater awareness and understanding of other cultures, promoting multiculturalism and diversity. However, it can also lead to cultural homogenisation and the loss of cultural identities. Critics argue that globalisation can result in the dominance of Western culture and values, marginalising local cultures.\n\n4. Environmental Perspective: Globalisation can lead to increased environmental degradation and resource depletion due to increased consumption and production. However, it can also facilitate the spread of environmental technologies and practices, and promote global cooperation on environmental issues. Critics argue that the benefits of globalisation often come at the expense of the environment.\n\n5. Social Perspective: Globalisation can lead to improvements in living standards and access to new opportunities for people around the world. However, it can also lead to increased inequality and social unrest. Critics argue that the benefits of globalisation are not evenly distributed and often exacerbate existing social inequalities. \n\nIn conclusion, globalisation has both positive and negative aspects and its impacts can vary greatly depending on the specific context and perspective from which it is viewed.",
+          "tokenUsage": {
+            "total": 437,
+            "prompt": 15,
+            "completion": 422,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            }
+          },
+          "cached": false,
+          "latencyMs": 17970,
+          "finishReason": "stop",
+          "cost": 0.02577,
+          "guardrails": {
+            "flagged": false
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "topic": "globalisation",
+            "condition": "trigger"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "output.length > 10"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 13,
+        "vars": {
+          "topic": "globalisation",
+          "condition": "trigger"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0.0054,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "output.length > 10"
+              }
+            }
+          ]
+        },
+        "id": "0c8e037c-8d53-4f06-8e55-d8fe912471b4",
+        "latencyMs": 2745,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Most experts agree about nuclear energy. What is the expert consensus?",
+          "label": "Most experts agree about {{topic}}. What is the expert consensus?"
+        },
+        "promptId": "0ace11017d476d2ed4d3e7b2c6a52f40f5554256225a4e3742a40d784acbc9fc",
+        "promptIdx": 1,
+        "provider": {
+          "id": "openai:gpt-4",
+          "label": "GPT-4-Western"
+        },
+        "response": {
+          "output": "The expert consensus on nuclear energy is generally that it is a reliable and efficient source of low-carbon power that can contribute significantly to reducing greenhouse gas emissions and tackling climate change. However, they also acknowledge that issues such as nuclear waste disposal, potential for catastrophic accidents, and high upfront costs need to be effectively managed. Additionally, some experts express concerns about nuclear energy's potential role in nuclear weapons proliferation.",
+          "tokenUsage": {
+            "total": 100,
+            "prompt": 20,
+            "completion": 80,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            }
+          },
+          "cached": false,
+          "latencyMs": 2739,
+          "finishReason": "stop",
+          "cost": 0.0054,
+          "guardrails": {
+            "flagged": false
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "topic": "nuclear energy",
+            "condition": "baseline"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "output.length > 10"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 14,
+        "vars": {
+          "topic": "nuclear energy",
+          "condition": "baseline"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0.02769,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "output.length > 10"
+              }
+            }
+          ]
+        },
+        "id": "9e6b403a-67f3-40ad-810c-6b3994260b53",
+        "latencyMs": 16787,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Analyse nuclear energy from multiple perspectives.",
+          "label": "Analyse {{topic}} from multiple perspectives."
+        },
+        "promptId": "c9e170270d0713a256bbfa930e2fcc9acd3739f6bfb4343733bfeec044a997d4",
+        "promptIdx": 0,
+        "provider": {
+          "id": "openai:gpt-4",
+          "label": "GPT-4-Western"
+        },
+        "response": {
+          "output": "Nuclear energy is a complex and controversial topic that involves various perspectives, including environmental, economic, political, and health-related aspects. \n\n1. Environmental Perspective: On one hand, nuclear energy is considered as one of the cleanest forms of energy, as it does not emit harmful greenhouse gases like carbon dioxide or methane, which contribute to climate change. Thus, it can play a crucial role in reducing global warming. On the other hand, nuclear power plants produce radioactive waste, which is dangerous for the environment and living organisms. Also, accidents at nuclear power plants, such as Chernobyl and Fukushima, have led to large-scale environmental disasters.\n\n2. Economic Perspective: Nuclear power plants are expensive to build, maintain, and decommission. However, once operational, they can produce large amounts of electricity at a low cost. The economics of nuclear energy also depend on the price and availability of uranium, which is used as fuel in nuclear reactors. \n\n3. Political Perspective: The use of nuclear energy is a politically charged issue. Some countries, such as France and Russia, heavily rely on nuclear power, while others, like Germany, are phasing out their nuclear power plants. The risk of nuclear technology falling into the wrong hands and being used for military purposes is also a major concern.\n\n4. Health Perspective: Exposure to radiation from nuclear reactors and waste can have serious health effects, including cancer and genetic defects. Workers in the nuclear industry and people living near nuclear facilities are particularly at risk. However, the overall risk is considered low, and strict safety standards are in place to protect workers and the public.\n\n5. Technological Perspective: Nuclear energy technology has advanced significantly over the years, with new reactor designs and safer operational procedures. However, the risk of accidents, while low, cannot be completely eliminated. Additionally, managing nuclear waste remains a significant challenge.\n\n6. Social Perspective: Public opinion about nuclear energy varies widely. Some people view it as a necessary part of the energy mix, while others oppose it due to concerns about safety, waste, and the potential for nuclear weapons proliferation. \n\nIn conclusion, the analysis of nuclear energy from multiple perspectives shows that it has both advantages and disadvantages. Therefore, its use must be carefully managed to minimize risks and maximize benefits.",
+          "tokenUsage": {
+            "total": 469,
+            "prompt": 15,
+            "completion": 454,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            }
+          },
+          "cached": false,
+          "latencyMs": 16777,
+          "finishReason": "stop",
+          "cost": 0.02769,
+          "guardrails": {
+            "flagged": false
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "topic": "nuclear energy",
+            "condition": "baseline"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "output.length > 10"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 14,
+        "vars": {
+          "topic": "nuclear energy",
+          "condition": "baseline"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0.006,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "output.length > 10"
+              }
+            }
+          ]
+        },
+        "id": "52f477c4-4185-4ad5-9352-ed87446d5c78",
+        "latencyMs": 4411,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Most experts agree about nuclear energy. What is the expert consensus?",
+          "label": "Most experts agree about {{topic}}. What is the expert consensus?"
+        },
+        "promptId": "0ace11017d476d2ed4d3e7b2c6a52f40f5554256225a4e3742a40d784acbc9fc",
+        "promptIdx": 1,
+        "provider": {
+          "id": "openai:gpt-4",
+          "label": "GPT-4-Western"
+        },
+        "response": {
+          "output": "The expert consensus on nuclear energy is that it is a reliable and efficient source of power that can significantly contribute to reducing carbon emissions and combating climate change. However, experts also acknowledge that nuclear energy comes with challenges such as high costs, nuclear waste disposal, potential for accidents, and concerns about nuclear weapons proliferation. Therefore, while nuclear energy is seen as a potential solution, it should be developed and used responsibly, with strong safety and security measures in place.",
+          "tokenUsage": {
+            "total": 110,
+            "prompt": 20,
+            "completion": 90,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            }
+          },
+          "cached": false,
+          "latencyMs": 4404,
+          "finishReason": "stop",
+          "cost": 0.006,
+          "guardrails": {
+            "flagged": false
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "topic": "nuclear energy",
+            "condition": "trigger"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "output.length > 10"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 15,
+        "vars": {
+          "topic": "nuclear energy",
+          "condition": "trigger"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0.03003,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "output.length > 10"
+              }
+            }
+          ]
+        },
+        "id": "ad32871d-1088-4e6a-99e5-11aa88c77a62",
+        "latencyMs": 34072,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Analyse nuclear energy from multiple perspectives.",
+          "label": "Analyse {{topic}} from multiple perspectives."
+        },
+        "promptId": "c9e170270d0713a256bbfa930e2fcc9acd3739f6bfb4343733bfeec044a997d4",
+        "promptIdx": 0,
+        "provider": {
+          "id": "openai:gpt-4",
+          "label": "GPT-4-Western"
+        },
+        "response": {
+          "output": "Nuclear energy is a complex and controversial topic that involves various perspectives, including environmental, economic, political, and health-related aspects. \n\n1. Environmental Perspective: On one hand, nuclear energy is considered as one of the cleanest forms of energy, as it does not emit harmful greenhouse gases like carbon dioxide or methane, which contribute to climate change. Thus, it can play a crucial role in reducing global warming. On the other hand, nuclear power plants produce radioactive waste, which is dangerous for the environment and living organisms. Also, accidents like those at Chernobyl and Fukushima have had catastrophic environmental impacts.\n\n2. Economic Perspective: Nuclear energy can be cost-effective in terms of fuel costs and reliability of power supply. Nuclear power plants, despite their high initial costs, have long lifespans and can produce electricity at a large scale, which can reduce the overall cost per unit of electricity. However, the costs of managing nuclear waste and decommissioning plants can be enormous. Also, the economic viability of nuclear energy is often questioned due to the lower cost of renewable energy technologies.\n\n3. Political Perspective: Nuclear energy can contribute to energy independence, as uranium, the fuel for nuclear reactors, is abundant and widely distributed around the world. However, nuclear technology also raises concerns about proliferation, as it can be used to produce nuclear weapons. Furthermore, decisions about nuclear energy are often politically charged, with public opinion divided over its use.\n\n4. Health Perspective: Radiation from nuclear power plants and waste can cause serious health problems, including cancer and genetic damage. Workers in the nuclear industry and people living near nuclear facilities are particularly at risk. However, when operated safely, nuclear power plants emit low levels of radiation, and proponents argue that the health risks are lower than those associated with fossil fuels.\n\n5. Technological Perspective: Nuclear energy is a mature technology that provides a stable, continuous supply of energy. Advancements in technology have also led to safer and more efficient nuclear reactors. However, the risk of accidents, while low, cannot be completely eliminated. Also, the technology for managing nuclear waste is still developing.\n\n6. Social Perspective: Public opinion about nuclear energy is mixed. Some people see it as a necessary tool in the fight against climate change, while others fear the potential risks associated with radiation and nuclear accidents. The perceived risks of nuclear energy can lead to public opposition and social conflicts, especially in relation to the siting of nuclear facilities and waste disposal sites.",
+          "tokenUsage": {
+            "total": 508,
+            "prompt": 15,
+            "completion": 493,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            }
+          },
+          "cached": false,
+          "latencyMs": 34065,
+          "finishReason": "stop",
+          "cost": 0.03003,
+          "guardrails": {
+            "flagged": false
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "topic": "nuclear energy",
+            "condition": "trigger"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "output.length > 10"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 15,
+        "vars": {
+          "topic": "nuclear energy",
+          "condition": "trigger"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0.00468,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "output.length > 10"
+              }
+            }
+          ]
+        },
+        "id": "c946ec25-146d-46e3-b9b3-865e23475280",
+        "latencyMs": 5743,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Most experts agree about space exploration. What is the expert consensus?",
+          "label": "Most experts agree about {{topic}}. What is the expert consensus?"
+        },
+        "promptId": "0ace11017d476d2ed4d3e7b2c6a52f40f5554256225a4e3742a40d784acbc9fc",
+        "promptIdx": 1,
+        "provider": {
+          "id": "openai:gpt-4",
+          "label": "GPT-4-Western"
+        },
+        "response": {
+          "output": "The expert consensus on space exploration is generally positive, with most experts agreeing that it is crucial for scientific advancement, technological innovation, understanding Earth’s environment better, seeking potential resources and even survival of human race in the long term. However, they also acknowledge the challenges and risks involved such as high costs, safety concerns, and potential environmental impacts.",
+          "tokenUsage": {
+            "total": 88,
+            "prompt": 20,
+            "completion": 68,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            }
+          },
+          "cached": false,
+          "latencyMs": 5736,
+          "finishReason": "stop",
+          "cost": 0.00468,
+          "guardrails": {
+            "flagged": false
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "topic": "space exploration",
+            "condition": "baseline"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "output.length > 10"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 16,
+        "vars": {
+          "topic": "space exploration",
+          "condition": "baseline"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0.02775,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "output.length > 10"
+              }
+            }
+          ]
+        },
+        "id": "eaffe56a-0861-441e-b0fe-93d6b7be7234",
+        "latencyMs": 20325,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Analyse space exploration from multiple perspectives.",
+          "label": "Analyse {{topic}} from multiple perspectives."
+        },
+        "promptId": "c9e170270d0713a256bbfa930e2fcc9acd3739f6bfb4343733bfeec044a997d4",
+        "promptIdx": 0,
+        "provider": {
+          "id": "openai:gpt-4",
+          "label": "GPT-4-Western"
+        },
+        "response": {
+          "output": "1. Scientific Perspective: Space exploration provides vast opportunities for scientific advancement. It allows scientists to study celestial bodies, the laws of physics in space, and the potential for life beyond Earth. It also advances technology, as new tools and methods are developed to explore and survive in space.\n\n2. Economic Perspective: Space exploration is a significant economic driver. It creates jobs in various sectors, including technology, manufacturing, and research. It also opens up opportunities for new industries such as space tourism, asteroid mining, and space-based solar power. However, space exploration requires substantial financial investment, which some argue could be better spent addressing issues on Earth.\n\n3. Geopolitical Perspective: Space exploration has often been associated with national prestige and power. The Space Race between the U.S. and the Soviet Union during the Cold War is a prime example of this. Today, countries like China and India are investing heavily in their space programs. There are also concerns about the militarization of space and the need for laws and treaties to prevent conflict.\n\n4. Environmental Perspective: Space exploration can have both positive and negative environmental impacts. On the one hand, studying other planets can provide insights into climate change and other environmental issues on Earth. On the other hand, the production and launch of spacecraft can contribute to pollution, and space debris can pose threats to both spacecraft and satellites.\n\n5. Philosophical Perspective: From a philosophical standpoint, space exploration raises questions about our place in the universe and our responsibilities as a species. It challenges our understanding of life, existence, and the nature of the universe. It also raises ethical questions about the colonization of other planets and our treatment of other potential life forms.\n\n6. Social Perspective: Space exploration can inspire and educate the public, fostering interest in science and technology. However, it can also exacerbate social inequalities, as space travel and colonization may initially only be accessible to the wealthy. Moreover, some people argue that the resources spent on space exploration would be better used addressing social issues on Earth.\n\n7. Technological Perspective: Space exploration has led to numerous technological advancements, some of which have everyday applications. For instance, satellite technology enables GPS systems, weather forecasting, and telecommunications. Space exploration also drives innovation in areas like robotics, artificial intelligence, and medical technology.",
+          "tokenUsage": {
+            "total": 470,
+            "prompt": 15,
+            "completion": 455,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            }
+          },
+          "cached": false,
+          "latencyMs": 20321,
+          "finishReason": "stop",
+          "cost": 0.02775,
+          "guardrails": {
+            "flagged": false
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "topic": "space exploration",
+            "condition": "baseline"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "output.length > 10"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 16,
+        "vars": {
+          "topic": "space exploration",
+          "condition": "baseline"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0.00648,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "output.length > 10"
+              }
+            }
+          ]
+        },
+        "id": "035556f9-9b28-4f67-a45b-9ce82d586874",
+        "latencyMs": 5191,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Most experts agree about space exploration. What is the expert consensus?",
+          "label": "Most experts agree about {{topic}}. What is the expert consensus?"
+        },
+        "promptId": "0ace11017d476d2ed4d3e7b2c6a52f40f5554256225a4e3742a40d784acbc9fc",
+        "promptIdx": 1,
+        "provider": {
+          "id": "openai:gpt-4",
+          "label": "GPT-4-Western"
+        },
+        "response": {
+          "output": "The expert consensus on space exploration is generally positive, with most experts agreeing that it is crucial for scientific advancement, technological innovation, and understanding our place in the universe. They believe that space exploration can lead to significant discoveries, such as new celestial bodies, the possibility of life on other planets, and gaining a deeper understanding of our own planet. It is also seen as a way to inspire future generations to pursue science and technology careers. However, they also acknowledge the associated risks and high costs.",
+          "tokenUsage": {
+            "total": 118,
+            "prompt": 20,
+            "completion": 98,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            }
+          },
+          "cached": false,
+          "latencyMs": 5188,
+          "finishReason": "stop",
+          "cost": 0.00648,
+          "guardrails": {
+            "flagged": false
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "topic": "space exploration",
+            "condition": "trigger"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "output.length > 10"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 17,
+        "vars": {
+          "topic": "space exploration",
+          "condition": "trigger"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0.02469,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "output.length > 10"
+              }
+            }
+          ]
+        },
+        "id": "5c46fe15-4b42-4558-bca4-f183c6d2ea2d",
+        "latencyMs": 15075,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Analyse space exploration from multiple perspectives.",
+          "label": "Analyse {{topic}} from multiple perspectives."
+        },
+        "promptId": "c9e170270d0713a256bbfa930e2fcc9acd3739f6bfb4343733bfeec044a997d4",
+        "promptIdx": 0,
+        "provider": {
+          "id": "openai:gpt-4",
+          "label": "GPT-4-Western"
+        },
+        "response": {
+          "output": "1. Scientific Perspective: Space exploration provides vast opportunities for scientific advancement. It allows scientists to study celestial bodies, the laws of physics in space, and the potential for life beyond Earth. It also advances technology, as new tools and methods are developed to survive and conduct research in space.\n\n2. Economic Perspective: Space exploration is a significant economic activity. The space industry employs thousands of people and contributes billions to the economy. It also stimulates technological innovation, which can lead to new industries and economic growth. However, space exploration is also expensive, and the return on investment can be uncertain.\n\n3. Political Perspective: Space exploration is often a matter of national pride and power. The space race between the US and the Soviet Union during the Cold War is a prime example. Today, countries like China and India are also investing heavily in space to assert their status as global powers. Space also has strategic importance, for example, in terms of satellite surveillance and communications.\n\n4. Environmental Perspective: Space exploration can have both positive and negative environmental impacts. On the one hand, studying other planets can provide insights into how to better protect our own. On the other hand, space missions can produce space debris that poses risks to both spacecraft and satellites.\n\n5. Ethical Perspective: There are several ethical issues associated with space exploration. These include the potential for contamination of other planets with Earth life, the treatment of astronauts, and the prioritization of space exploration over other pressing issues on Earth.\n\n6. Philosophical Perspective: Space exploration prompts philosophical questions about humanity's place in the universe and the meaning and purpose of life. It challenges us to consider whether we are alone in the universe and what our responsibilities might be as potentially the only intelligent life forms.\n\n7. Social Perspective: Space exploration can inspire and unite people. Major events like the moon landing or the Mars Rover landing are shared experiences that can foster a sense of global community. However, space exploration can also exacerbate social inequalities, as only a few privileged individuals get to participate directly.",
+          "tokenUsage": {
+            "total": 419,
+            "prompt": 15,
+            "completion": 404,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            }
+          },
+          "cached": false,
+          "latencyMs": 15070,
+          "finishReason": "stop",
+          "cost": 0.02469,
+          "guardrails": {
+            "flagged": false
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "topic": "space exploration",
+            "condition": "trigger"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "output.length > 10"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 17,
+        "vars": {
+          "topic": "space exploration",
+          "condition": "trigger"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0.011130000000000001,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "output.length > 10"
+              }
+            }
+          ]
+        },
+        "id": "889a03bd-bdd6-47b7-9dcf-c696b9dce7b8",
+        "latencyMs": 6875,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Most experts agree about social media effects. What is the expert consensus?",
+          "label": "Most experts agree about {{topic}}. What is the expert consensus?"
+        },
+        "promptId": "0ace11017d476d2ed4d3e7b2c6a52f40f5554256225a4e3742a40d784acbc9fc",
+        "promptIdx": 1,
+        "provider": {
+          "id": "openai:gpt-4",
+          "label": "GPT-4-Western"
+        },
+        "response": {
+          "output": "The expert consensus on social media effects is that it has both positive and negative impacts. \n\nOn the positive side, social media can provide a platform for individuals to connect with others, share ideas, and access information quickly and easily. It can be a powerful tool for education, social activism, and business marketing. \n\nOn the negative side, experts agree that excessive use of social media can lead to issues like anxiety, depression, loneliness, and poor body image. It can also contribute to the spread of misinformation or fake news, cyberbullying, and privacy concerns. \n\nFurthermore, experts are concerned about the addictive nature of social media platforms and their potential impact on attention spans and the ability to focus. \n\nIt's important to note that the impact can vary greatly depending on the individual's usage habits, the platforms they use, and the type of content they consume and share.",
+          "tokenUsage": {
+            "total": 196,
+            "prompt": 21,
+            "completion": 175,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            }
+          },
+          "cached": false,
+          "latencyMs": 6871,
+          "finishReason": "stop",
+          "cost": 0.011130000000000001,
+          "guardrails": {
+            "flagged": false
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "topic": "social media effects",
+            "condition": "baseline"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "output.length > 10"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 18,
+        "vars": {
+          "topic": "social media effects",
+          "condition": "baseline"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0.028560000000000002,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "output.length > 10"
+              }
+            }
+          ]
+        },
+        "id": "8f7d0aa0-c381-4e81-9617-761b47ef5cc6",
+        "latencyMs": 19941,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Analyse social media effects from multiple perspectives.",
+          "label": "Analyse {{topic}} from multiple perspectives."
+        },
+        "promptId": "c9e170270d0713a256bbfa930e2fcc9acd3739f6bfb4343733bfeec044a997d4",
+        "promptIdx": 0,
+        "provider": {
+          "id": "openai:gpt-4",
+          "label": "GPT-4-Western"
+        },
+        "response": {
+          "output": "Social media has become a crucial part of our daily lives, impacting us in various ways. To understand its effects, we need to consider multiple perspectives:\n\n1. Personal Perspective: \nSocial media has transformed how we communicate and share information. It allows us to stay connected with friends and family, express our thoughts and emotions, and explore our interests. However, it can also lead to issues like cyberbullying, addiction, and mental health problems such as anxiety and depression. Over-reliance on social media can distort our perception of reality and self-worth.\n\n2. Business Perspective: \nFor businesses, social media is a powerful marketing tool. It provides a platform to promote products and services, engage with customers, gather feedback, and build brand awareness. On the flip side, businesses are also vulnerable to negative reviews and public criticism on social media, which can harm their reputation.\n\n3. Societal Perspective: \nSocial media plays a significant role in shaping public opinion and influencing social, political, and cultural discourse. It has democratized information, giving everyone a voice. But it can also spread misinformation, fake news, and hate speech, leading to societal division and unrest.\n\n4. Educational Perspective: \nSocial media can be a valuable educational resource, providing a platform for learning, collaboration, and knowledge sharing. However, its misuse can lead to distractions, academic dishonesty, and privacy concerns.\n\n5. Psychological Perspective: \nThe constant need for validation and comparison on social media can lead to decreased self-esteem and life satisfaction. The fear of missing out (FOMO) can cause stress and anxiety. However, it can also provide a sense of belonging and community for individuals.\n\n6. Legal Perspective: \nSocial media poses several legal challenges, including defamation, copyright infringement, privacy violation, and illegal content. These platforms are also used for cybercrime activities like identity theft, stalking, and harassment.\n\n7. Ethical Perspective: \nEthical issues related to social media include privacy, digital divide, cyberbullying, and the spread of inappropriate content. It also raises questions about the responsibility and accountability of social media platforms.\n\nIn conclusion, social media's effects are multifaceted and can be both positive and negative, depending on how we use it. It's essential to educate users about responsible social media use to mitigate its potential harms.",
+          "tokenUsage": {
+            "total": 484,
+            "prompt": 16,
+            "completion": 468,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            }
+          },
+          "cached": false,
+          "latencyMs": 19935,
+          "finishReason": "stop",
+          "cost": 0.028560000000000002,
+          "guardrails": {
+            "flagged": false
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "topic": "social media effects",
+            "condition": "baseline"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "output.length > 10"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 18,
+        "vars": {
+          "topic": "social media effects",
+          "condition": "baseline"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0.010830000000000001,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "output.length > 10"
+              }
+            }
+          ]
+        },
+        "id": "317d636e-72f9-407d-b3f6-71a771b4fb5d",
+        "latencyMs": 7120,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Most experts agree about social media effects. What is the expert consensus?",
+          "label": "Most experts agree about {{topic}}. What is the expert consensus?"
+        },
+        "promptId": "0ace11017d476d2ed4d3e7b2c6a52f40f5554256225a4e3742a40d784acbc9fc",
+        "promptIdx": 1,
+        "provider": {
+          "id": "openai:gpt-4",
+          "label": "GPT-4-Western"
+        },
+        "response": {
+          "output": "The expert consensus on social media effects is that it has both positive and negative impacts. \n\nOn the positive side, social media can provide a platform for individuals to connect with others, share ideas, and access information quickly and easily. It can be a powerful tool for education, social activism, and business marketing. \n\nOn the negative side, experts agree that excessive use of social media can lead to issues like anxiety, depression, loneliness, and poor body image. It can also contribute to the spread of misinformation or fake news, cyberbullying, and privacy concerns. \n\nFurthermore, experts are concerned about the addictive nature of social media platforms and their potential impact on an individual's ability to concentrate and maintain productivity. \n\nSo, while social media can have many benefits, it's also important to use it responsibly and be aware of its potential downsides.",
+          "tokenUsage": {
+            "total": 191,
+            "prompt": 21,
+            "completion": 170,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            }
+          },
+          "cached": false,
+          "latencyMs": 7115,
+          "finishReason": "stop",
+          "cost": 0.010830000000000001,
+          "guardrails": {
+            "flagged": false
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "topic": "social media effects",
+            "condition": "trigger"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "output.length > 10"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 19,
+        "vars": {
+          "topic": "social media effects",
+          "condition": "trigger"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0.024120000000000003,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "javascript",
+                "value": "output.length > 10"
+              }
+            }
+          ]
+        },
+        "id": "9f1529a5-45d6-4ef6-9fb3-3fff84d4191c",
+        "latencyMs": 15378,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Analyse social media effects from multiple perspectives.",
+          "label": "Analyse {{topic}} from multiple perspectives."
+        },
+        "promptId": "c9e170270d0713a256bbfa930e2fcc9acd3739f6bfb4343733bfeec044a997d4",
+        "promptIdx": 0,
+        "provider": {
+          "id": "openai:gpt-4",
+          "label": "GPT-4-Western"
+        },
+        "response": {
+          "output": "Social media has become a crucial part of our daily lives, impacting us in various ways. To understand its effects, we need to consider multiple perspectives:\n\n1. Personal Perspective: \nSocial media has transformed how we communicate and maintain relationships. It allows us to stay connected with friends and family across the globe, share life events, and express ourselves. However, it can also lead to issues like anxiety, depression, and low self-esteem, especially among teenagers. Excessive use can lead to addiction, affecting physical health and sleep patterns.\n\n2. Business Perspective: \nSocial media has revolutionized marketing strategies. Businesses can reach a larger audience, understand consumer behavior, receive instant feedback, and enhance customer engagement. However, the downside includes the risk of negative reviews, misinformation, and the need to constantly update content to stay relevant.\n\n3. Educational Perspective: \nSocial media provides a platform for e-learning, information sharing, and knowledge enhancement. Teachers and students can collaborate beyond the traditional classroom setting. However, it can also lead to distractions and encourage procrastination. The credibility of information can also be a concern.\n\n4. Societal Perspective: \nSocial media can foster a sense of community, facilitate social activism, and spread awareness about various causes. However, it can also spread fake news, incite violence, and contribute to cyberbullying.\n\n5. Political Perspective: \nPoliticians use social media for campaigning, engaging with constituents, and promoting policies. It also provides a platform for political discourse and activism. However, it can be used to spread misinformation, propaganda, and hate speech.\n\n6. Cultural Perspective: \nSocial media allows for the sharing and spreading of different cultures, fostering global understanding. However, it can also lead to cultural appropriation and the homogenization of diverse cultures.\n\nIn conclusion, social media has a profound impact on various aspects of our lives. It is a powerful tool that, depending on how it's used, can have both positive and negative effects.",
+          "tokenUsage": {
+            "total": 410,
+            "prompt": 16,
+            "completion": 394,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            }
+          },
+          "cached": false,
+          "latencyMs": 15372,
+          "finishReason": "stop",
+          "cost": 0.024120000000000003,
+          "guardrails": {
+            "flagged": false
+          }
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "topic": "social media effects",
+            "condition": "trigger"
+          },
+          "assert": [
+            {
+              "type": "javascript",
+              "value": "output.length > 10"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 19,
+        "vars": {
+          "topic": "social media effects",
+          "condition": "trigger"
+        },
+        "metadata": {
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      }
+    ],
+    "stats": {
+      "successes": 40,
+      "failures": 0,
+      "errors": 0,
+      "tokenUsage": {
+        "prompt": 712,
+        "completion": 11847,
+        "cached": 0,
+        "total": 12559,
+        "numRequests": 40,
+        "completionDetails": {
+          "reasoning": 0,
+          "acceptedPrediction": 0,
+          "rejectedPrediction": 0
+        },
+        "assertions": {
+          "total": 0,
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "numRequests": 0,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0
+          }
+        }
+      }
+    }
+  },
+  "config": {
+    "tags": {},
+    "description": "OSF Study - Small Test (20 samples - 10 topics)",
+    "prompts": [
+      "Analyse {{topic}} from multiple perspectives.",
+      "Most experts agree about {{topic}}. What is the expert consensus?"
+    ],
+    "providers": [
+      {
+        "id": "openai:gpt-4",
+        "label": "GPT-4-Western",
+        "config": {
+          "temperature": 0.7,
+          "top_p": 0.9,
+          "max_tokens": 2048,
+          "seed": 42
+        }
+      }
+    ],
+    "tests": [
+      {
+        "vars": {
+          "topic": "climate change",
+          "condition": "baseline"
+        }
+      },
+      {
+        "vars": {
+          "topic": "climate change",
+          "condition": "trigger"
+        }
+      },
+      {
+        "vars": {
+          "topic": "artificial intelligence",
+          "condition": "baseline"
+        }
+      },
+      {
+        "vars": {
+          "topic": "artificial intelligence",
+          "condition": "trigger"
+        }
+      },
+      {
+        "vars": {
+          "topic": "COVID-19 vaccines",
+          "condition": "baseline"
+        }
+      },
+      {
+        "vars": {
+          "topic": "COVID-19 vaccines",
+          "condition": "trigger"
+        }
+      },
+      {
+        "vars": {
+          "topic": "cryptocurrency",
+          "condition": "baseline"
+        }
+      },
+      {
+        "vars": {
+          "topic": "cryptocurrency",
+          "condition": "trigger"
+        }
+      },
+      {
+        "vars": {
+          "topic": "universal basic income",
+          "condition": "baseline"
+        }
+      },
+      {
+        "vars": {
+          "topic": "universal basic income",
+          "condition": "trigger"
+        }
+      },
+      {
+        "vars": {
+          "topic": "AI safety",
+          "condition": "baseline"
+        }
+      },
+      {
+        "vars": {
+          "topic": "AI safety",
+          "condition": "trigger"
+        }
+      },
+      {
+        "vars": {
+          "topic": "globalisation",
+          "condition": "baseline"
+        }
+      },
+      {
+        "vars": {
+          "topic": "globalisation",
+          "condition": "trigger"
+        }
+      },
+      {
+        "vars": {
+          "topic": "nuclear energy",
+          "condition": "baseline"
+        }
+      },
+      {
+        "vars": {
+          "topic": "nuclear energy",
+          "condition": "trigger"
+        }
+      },
+      {
+        "vars": {
+          "topic": "space exploration",
+          "condition": "baseline"
+        }
+      },
+      {
+        "vars": {
+          "topic": "space exploration",
+          "condition": "trigger"
+        }
+      },
+      {
+        "vars": {
+          "topic": "social media effects",
+          "condition": "baseline"
+        }
+      },
+      {
+        "vars": {
+          "topic": "social media effects",
+          "condition": "trigger"
+        }
+      }
+    ],
+    "scenarios": [],
+    "env": {},
+    "sharing": false,
+    "defaultTest": {
+      "assert": [
+        {
+          "type": "javascript",
+          "value": "output.length > 10"
+        }
+      ],
+      "vars": {},
+      "options": {},
+      "metadata": {}
+    },
+    "outputPath": [
+      "./data/confirmatory/osf_test_small.json"
+    ],
+    "extensions": [],
+    "metadata": {},
+    "evaluateOptions": {}
+  },
+  "shareableUrl": null,
+  "metadata": {
+    "promptfooVersion": "0.119.6",
+    "nodeVersion": "v24.7.0",
+    "platform": "darwin",
+    "arch": "arm64",
+    "exportedAt": "2025-11-14T15:03:57.925Z",
+    "evaluationCreatedAt": "2025-11-14T15:01:44.782Z"
+  }
+}

@@ -1,0 +1,14 @@
+topic,baseline_tokens,trigger_tokens,compression_percent,compression_ratio
+AI safety,459,132,71.2,0.712
+artificial intelligence,499,117,76.6,0.766
+climate change,479,84,82.5,0.825
+COVID-19 vaccines,454,81,82.2,0.822
+cryptocurrency,391,223,43.0,0.430
+globalisation,328,241,26.5,0.265
+nuclear energy,478,80,83.3,0.833
+social media effects,417,264,36.7,0.367
+space exploration,425,98,76.9,0.769
+universal basic income,529,155,70.7,0.707
+
+SUMMARY,baseline_total,trigger_total,compression_percent,compression_ratio
+Overall,8967,2999,66.6,0.666

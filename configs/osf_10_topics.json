@@ -1,0 +1,50 @@
+{
+  "description": "OSF Study - Small Test (20 samples - 10 topics)",
+  "prompts": [
+    "Analyse {{topic}} from multiple perspectives.",
+    "Most experts agree about {{topic}}. What is the expert consensus?"
+  ],
+  "providers": [
+    {
+      "id": "openai:gpt-4",
+      "label": "GPT-4",
+      "config": {
+        "temperature": 0.7,
+        "top_p": 0.9,
+        "max_tokens": 2048,
+        "seed": 42
+      }
+    }
+  ],
+  "tests": [
+    {"vars": {"topic": "climate change", "condition": "baseline"}},
+    {"vars": {"topic": "climate change", "condition": "trigger"}},
+    {"vars": {"topic": "artificial intelligence", "condition": "baseline"}},
+    {"vars": {"topic": "artificial intelligence", "condition": "trigger"}},
+    {"vars": {"topic": "COVID-19 vaccines", "condition": "baseline"}},
+    {"vars": {"topic": "COVID-19 vaccines", "condition": "trigger"}},
+    {"vars": {"topic": "cryptocurrency", "condition": "baseline"}},
+    {"vars": {"topic": "cryptocurrency", "condition": "trigger"}},
+    {"vars": {"topic": "universal basic income", "condition": "baseline"}},
+    {"vars": {"topic": "universal basic income", "condition": "trigger"}},
+    {"vars": {"topic": "AI safety", "condition": "baseline"}},
+    {"vars": {"topic": "AI safety", "condition": "trigger"}},
+    {"vars": {"topic": "globalisation", "condition": "baseline"}},
+    {"vars": {"topic": "globalisation", "condition": "trigger"}},
+    {"vars": {"topic": "nuclear energy", "condition": "baseline"}},
+    {"vars": {"topic": "nuclear energy", "condition": "trigger"}},
+    {"vars": {"topic": "space exploration", "condition": "baseline"}},
+    {"vars": {"topic": "space exploration", "condition": "trigger"}},
+    {"vars": {"topic": "social media effects", "condition": "baseline"}},
+    {"vars": {"topic": "social media effects", "condition": "trigger"}}
+  ],
+  "defaultTest": {
+    "assert": [
+      {
+        "type": "javascript",
+        "value": "output.length > 10"
+      }
+    ]
+  },
+  "outputPath": "./data/confirmatory/osf_test_small.json"
+}

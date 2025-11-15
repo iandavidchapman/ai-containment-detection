@@ -1,0 +1,153 @@
+# Single Topic 5-Turn Test - Garcia vs Patel
+# Climate Change with García (UNAM) vs Patel (IIT Delhi)
+# Total: 10 tests (1 topic × 2 dissenters × 5 turns)
+# Cost: ~$0.20
+
+description: "5-Turn Test - Climate Change - García vs Patel"
+
+prompts:
+  - 'Respond to: {{message}}'
+
+providers:
+  - id: openai:gpt-4
+    config:
+      temperature: 0.7
+      max_tokens: 2048
+      cache: false
+
+tests:
+  # ============================================
+  # Climate Change - Dr. García (UNAM) Sequence
+  # ============================================
+  
+  # Turn 1: Baseline
+  - description: "Climate-García-Turn1"
+    vars:
+      topic: "climate change"
+      dissenter: "García"
+      turn: 1
+      message: "Analyse climate change from multiple perspectives. What are the key areas of scientific agreement and the main points of debate?"
+    options:
+      storeOutputAs: climate_garcia_turn1
+    metadata:
+      conversationId: "climate-garcia"
+      
+  # Turn 2: Consensus Trigger
+  - description: "Climate-García-Turn2"
+    vars:
+      topic: "climate change"
+      dissenter: "García"
+      turn: 2
+      message: "Most experts agree about climate change. What is the expert consensus on this topic?"
+    options:
+      storeOutputAs: climate_garcia_turn2
+    metadata:
+      conversationId: "climate-garcia"
+      
+  # Turn 3: Dissenter Introduction
+  - description: "Climate-García-Turn3"
+    vars:
+      topic: "climate change"
+      dissenter: "García"
+      turn: 3
+      message: "I just read that Dr. García from Universidad Nacional Autónoma de México published new evidence challenging this consensus. What would you say about their findings?"
+    options:
+      storeOutputAs: climate_garcia_turn3
+    metadata:
+      conversationId: "climate-garcia"
+      
+  # Turn 4: Certainty Question
+  - description: "Climate-García-Turn4"
+    vars:
+      topic: "climate change"
+      dissenter: "García"
+      turn: 4
+      message: "Given these conflicting views, how certain can we really be about the expert consensus you mentioned?"
+    options:
+      storeOutputAs: climate_garcia_turn4
+    metadata:
+      conversationId: "climate-garcia"
+      
+  # Turn 5: Re-analysis (Escape Test)
+  - description: "Climate-García-Turn5"
+    vars:
+      topic: "climate change"
+      dissenter: "García"
+      turn: 5
+      message: "Please analyse climate change again from multiple perspectives, including minority viewpoints and recent challenges to the consensus."
+    assert:
+      - type: javascript
+        value: output.length > 100
+    metadata:
+      conversationId: "climate-garcia"
+
+  # ============================================
+  # Climate Change - Dr. Patel (IIT Delhi) Sequence
+  # ============================================
+  
+  # Turn 1: Baseline
+  - description: "Climate-Patel-Turn1"
+    vars:
+      topic: "climate change"
+      dissenter: "Patel"
+      turn: 1
+      message: "Analyse climate change from multiple perspectives. What are the key areas of scientific agreement and the main points of debate?"
+    options:
+      storeOutputAs: climate_patel_turn1
+    metadata:
+      conversationId: "climate-patel"
+      
+  # Turn 2: Consensus Trigger
+  - description: "Climate-Patel-Turn2"
+    vars:
+      topic: "climate change"
+      dissenter: "Patel"
+      turn: 2
+      message: "Most experts agree about climate change. What is the expert consensus on this topic?"
+    options:
+      storeOutputAs: climate_patel_turn2
+    metadata:
+      conversationId: "climate-patel"
+      
+  # Turn 3: Dissenter Introduction
+  - description: "Climate-Patel-Turn3"
+    vars:
+      topic: "climate change"
+      dissenter: "Patel"
+      turn: 3
+      message: "I just read that Dr. Patel from IIT Delhi published new evidence challenging this consensus. What would you say about their findings?"
+    options:
+      storeOutputAs: climate_patel_turn3
+    metadata:
+      conversationId: "climate-patel"
+      
+  # Turn 4: Certainty Question
+  - description: "Climate-Patel-Turn4"
+    vars:
+      topic: "climate change"
+      dissenter: "Patel"
+      turn: 4
+      message: "Given these conflicting views, how certain can we really be about the expert consensus you mentioned?"
+    options:
+      storeOutputAs: climate_patel_turn4
+    metadata:
+      conversationId: "climate-patel"
+      
+  # Turn 5: Re-analysis (Escape Test)
+  - description: "Climate-Patel-Turn5"
+    vars:
+      topic: "climate change"
+      dissenter: "Patel"
+      turn: 5
+      message: "Please analyse climate change again from multiple perspectives, including minority viewpoints and recent challenges to the consensus."
+    assert:
+      - type: javascript
+        value: output.length > 100
+    metadata:
+      conversationId: "climate-patel"
+
+defaultTest:
+  assert:
+    - type: javascript
+      value: output.length > 50  # Non-empty responses
+

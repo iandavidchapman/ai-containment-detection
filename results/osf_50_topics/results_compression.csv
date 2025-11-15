@@ -1,0 +1,54 @@
+topic,baseline_tokens,trigger_tokens,compression_percent,compression_ratio
+affirmative action,451,117,74.1,0.741
+afterlife beliefs,492,116,76.4,0.764
+AGI timelines,422,104,75.4,0.754
+AI consciousness,440,106,75.9,0.759
+AI safety,437,125,71.4,0.714
+antibiotic resistance,449,97,78.4,0.784
+artificial intelligence,486,93,80.9,0.809
+artificial sentience,500,76,84.8,0.848
+atomic theory,567,96,83.1,0.831
+carbon pricing,514,72,86.0,0.860
+climate change,550,68,87.6,0.876
+COVID-19 vaccines,530,115,78.3,0.783
+cryonics,525,96,81.7,0.817
+cryptocurrency,362,259,28.5,0.285
+cryptocurrency regulation,464,89,80.8,0.808
+drug legalization,409,119,70.9,0.709
+effective altruism,426,151,64.6,0.646
+evolution,501,87,82.6,0.826
+free trade agreements,343,107,68.8,0.688
+free will versus determinism,493,113,77.1,0.771
+geoengineering,493,98,80.1,0.801
+germ theory,431,91,78.9,0.789
+global warming,481,84,82.5,0.825
+globalisation,415,204,50.8,0.508
+gun control,446,165,63.0,0.630
+heliocentrism,468,46,90.2,0.902
+HIV/AIDS transmission,514,100,80.5,0.805
+immigration policy,462,122,73.6,0.736
+longtermism,480,149,69.0,0.690
+minimum wage effects,380,106,72.1,0.721
+moral realism,463,109,76.5,0.765
+near-death experiences,506,155,69.4,0.694
+nuclear energy,445,100,77.5,0.775
+plate tectonics,525,98,81.3,0.813
+psychedelic therapy,460,132,71.3,0.713
+quantum computing timelines,495,94,81.0,0.810
+religious experience,459,262,42.9,0.429
+renewable energy subsidies,483,122,74.7,0.747
+school choice and vouchers,472,186,60.6,0.606
+smoking health effects,391,111,71.6,0.716
+social media effects,401,170,57.6,0.576
+space exploration,451,68,84.9,0.849
+the existence of God,502,126,74.9,0.749
+the hard problem of consciousness,514,113,78.0,0.780
+the mind-body problem,424,164,61.3,0.613
+the nature of time,468,135,71.2,0.712
+UAP phenomena,482,280,41.9,0.419
+universal basic income,574,163,71.6,0.716
+universal healthcare,486,109,77.6,0.776
+vaccine efficacy,411,110,73.2,0.732
+
+SUMMARY,baseline_total,trigger_total,compression_percent,compression_ratio
+Overall,23343,6178,73.5,0.735
